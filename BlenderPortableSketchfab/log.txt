@@ -1,0 +1,2103 @@
+Node 
+    Children 
+        MatrixTransform 
+            Seat_Leon_FR 
+            1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 1.0 
+            Children 
+                MatrixTransform 
+                    None 
+                    1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 
+                    Children 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.05176e-05 -57.793 99.8326 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.72921 1.77957 0.0255661 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_18 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 41129 Offset: 0 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 3822 Offset: 54140 Encoding: varint magic: 21382 
+                                                    Vertex: mode: Vertex Int32Array Size: 21382 Offset: 265508 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 21382 Offset: 212784 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.41848e-05 -182.706 72.5947 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0306244 0.0325165 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_08 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 61493 Offset: 369280 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 3042 Offset: 448708 Encoding: varint magic: 30936 
+                                                    Vertex: mode: Vertex Int32Array Size: 30936 Offset: 740792 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 30936 Offset: 677640 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -6.84759e-06 22.832 70.5756 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0103989 -0.00212097 1.0 
+                                    Children 
+                                        Node 
+                                            body_08 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 50924 Offset: 887644 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 4554 Offset: 955852 Encoding: varint magic: 25997 
+                                                    Vertex: mode: Vertex Int32Array Size: 25998 Offset: 1207636 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 25998 Offset: 1150884 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            d_red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.82036e-05 189.5 88.5745 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-06 0.0410461 -0.0529556 1.0 
+                                    Children 
+                                        Node 
+                                            d_red_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 78187 Offset: 1302696 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint32Array Size: 6009 Offset: 1405288 Encoding: varint magic: 39840 
+                                                    Vertex: mode: Vertex Int32Array Size: 39857 Offset: 1767408 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 39857 Offset: 1687384 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.86948e-06 28.3816 115.931 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-06 0.0012207 -0.00241852 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 38914 Offset: 1957108 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 2901 Offset: 2007856 Encoding: varint magic: 19678 
+                                                    Vertex: mode: Vertex Int32Array Size: 19678 Offset: 2191744 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 19678 Offset: 2150880 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.42113e-05 204.053 33.5065 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0108948 -0.00635147 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_17 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 39359 Offset: 2281444 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 2889 Offset: 2332976 Encoding: varint magic: 19973 
+                                                    Vertex: mode: Vertex Int32Array Size: 19973 Offset: 2515512 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 19973 Offset: 2471728 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0941985 190.259 88.9814 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.000652313 0.0193024 -0.0183792 1.0 
+                                    Children 
+                                        Node 
+                                            red_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 32581 Offset: 2595568 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1539 Offset: 2638308 Encoding: varint magic: 16348 
+                                                    Vertex: mode: Vertex Int32Array Size: 16351 Offset: 2784824 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 16351 Offset: 2751980 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.94348e-05 188.09 66.2986 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.62939e-06 0.0407104 0.00891876 1.0 
+                                    Children 
+                                        Node 
+                                            body_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 65064 Offset: 2862748 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint32Array Size: 5037 Offset: 2947920 Encoding: varint magic: 33705 
+                                                    Vertex: mode: Vertex Int32Array Size: 33709 Offset: 3263444 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 33709 Offset: 3188448 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            interior 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.02737e-05 45.4442 90.9784 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0884399 0.164124 1.0 
+                                    Children 
+                                        Node 
+                                            interior_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 50561 Offset: 3389688 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 8061 Offset: 3454476 Encoding: varint magic: 31062 
+                                                    Vertex: mode: Vertex Int32Array Size: 31301 Offset: 3927168 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 31301 Offset: 3693428 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90625e-05 -148.717 59.8279 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.0359955 0.0177727 1.0 
+                                    Children 
+                                        Node 
+                                            body_07 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 84118 Offset: 4060736 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint32Array Size: 7116 Offset: 4173108 Encoding: varint magic: 42947 
+                                                    Vertex: mode: Vertex Int32Array Size: 42949 Offset: 4582624 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 42949 Offset: 4490984 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 8.85638e-06 19.9348 113.247 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.52588e-05 -0.0406685 0.00391388 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_16 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 39279 Offset: 4852888 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 3861 Offset: 4903892 Encoding: varint magic: 20655 
+                                                    Vertex: mode: Vertex Int32Array Size: 20668 Offset: 5103072 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 20668 Offset: 5059328 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -76.5827 138.663 32.1729 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.00921631 0.033493 -0.0680008 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 25258 Offset: 5222516 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 4446 Offset: 5254892 Encoding: varint magic: 15125 
+                                                    Vertex: mode: Vertex Int32Array Size: 15186 Offset: 5469520 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 15186 Offset: 5375404 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.42022e-05 -182.882 72.4449 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0906982 0.0179596 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_15 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 37308 Offset: 5536152 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 2289 Offset: 5584808 Encoding: varint magic: 18879 
+                                                    Vertex: mode: Vertex Int32Array Size: 18886 Offset: 5763716 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 18886 Offset: 5725944 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.94578e-05 -201.815 34.6442 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.62939e-06 -0.082489 -0.00748444 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_14 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 86245 Offset: 5855948 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint32Array Size: 7347 Offset: 5972004 Encoding: varint magic: 43843 
+                                                    Vertex: mode: Vertex Int32Array Size: 43845 Offset: 6387220 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 43845 Offset: 6298680 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -77.1309 -129.938 32.1734 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.00921631 0.033493 -0.0680008 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 25258 Offset: 6594668 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 4446 Offset: 6627044 Encoding: varint magic: 15125 
+                                                    Vertex: mode: Vertex Int32Array Size: 15186 Offset: 6841676 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 15186 Offset: 6747560 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 77.131 -129.833 32.1734 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.00920868 -0.033493 -0.0680008 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 25258 Offset: 6908308 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 4446 Offset: 6940684 Encoding: varint magic: 15125 
+                                                    Vertex: mode: Vertex Int32Array Size: 15186 Offset: 7149896 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 15186 Offset: 7055780 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 76.5826 138.768 32.1729 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.00920868 -0.033493 -0.0680008 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_07 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 25258 Offset: 7216536 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 4446 Offset: 7248912 Encoding: varint magic: 15125 
+                                                    Vertex: mode: Vertex Int32Array Size: 15186 Offset: 7458136 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 15186 Offset: 7364020 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            r_glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.58928e-05 189.88 88.591 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.8147e-06 0.0563202 -0.0520782 1.0 
+                                    Children 
+                                        Node 
+                                            r_glass_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 33811 Offset: 7524776 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 2421 Offset: 7570360 Encoding: varint magic: 16897 
+                                                    Vertex: mode: Vertex Int32Array Size: 16897 Offset: 7722488 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 16897 Offset: 7688684 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.72806e-05 -4.57797 44.5295 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 4.57764e-05 8.00379e-12 -1.52588e-05 1.0 
+                                    Children 
+                                        Node 
+                                            black_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 739 Offset: 7788704 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 33 Offset: 7789648 Encoding: varint magic: 689 
+                                                    Vertex: mode: Vertex Int32Array Size: 698 Offset: 7796824 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 698 Offset: 7794584 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 68.332 53.3352 81.8207 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.000289917 0.0614471 0.126602 1.0 
+                                    Children 
+                                        Node 
+                                            body_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 21268 Offset: 7800392 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1542 Offset: 7828192 Encoding: varint magic: 10722 
+                                                    Vertex: mode: Vertex Int32Array Size: 10722 Offset: 7929536 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 10722 Offset: 7906032 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.08153e-07 73.8811 134.533 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.52588e-05 -0.0237656 0.162964 1.0 
+                                    Children 
+                                        Node 
+                                            body_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 16454 Offset: 7971004 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 876 Offset: 7992768 Encoding: varint magic: 8238 
+                                                    Vertex: mode: Vertex Int32Array Size: 8238 Offset: 8065352 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8238 Offset: 8048448 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -8.42669e-05 103.183 22.3007 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 0.0198593 -0.0274181 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_15 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1837 Offset: 8098440 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 186 Offset: 8100720 Encoding: varint magic: 998 
+                                                    Vertex: mode: Vertex Int32Array Size: 998 Offset: 8109720 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 998 Offset: 8107724 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.22701e-05 124.164 144.055 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.19209e-07 -0.0127106 -0.282196 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 6838 Offset: 8114464 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 348 Offset: 8123900 Encoding: varint magic: 3329 
+                                                    Vertex: mode: Vertex Int32Array Size: 3329 Offset: 8155372 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3329 Offset: 8148712 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -84.6842 124.229 16.0055 1.0 
+                            Children 
+                                Node 
+                                    black_matt_13 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 309 Offset: 8166376 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 6 Offset: 8166760 Encoding: varint magic: 375 
+                                            Vertex: mode: Vertex Int32Array Size: 376 Offset: 8172056 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 376 Offset: 8169592 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 77.5542 131.085 39.6028 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.62939e-06 1.33397e-12 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            silver_d_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 4557 Offset: 8173488 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 498 Offset: 8179260 Encoding: varint magic: 3370 
+                                                    Vertex: mode: Vertex Int32Array Size: 3443 Offset: 8226880 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3443 Offset: 8206140 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -77.5542 131.085 39.6028 1.0 
+                            Children 
+                                Node 
+                                    silver_d_07 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 4468 Offset: 8243356 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 477 Offset: 8249032 Encoding: varint magic: 3372 
+                                            Vertex: mode: Vertex Int32Array Size: 3443 Offset: 8295968 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 3443 Offset: 8274992 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 77.529 132.024 38.8078 1.0 
+                            Children 
+                                Node 
+                                    black_matt_24 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 160 Offset: 8312588 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint8Array Size: 6 Offset: 8312784 Encoding: None magic: 146 
+                                            Vertex: mode: Vertex Int32Array Size: 148 Offset: 8314928 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 148 Offset: 8313904 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -77.529 132.024 38.8078 1.0 
+                            Children 
+                                Node 
+                                    black_matt_30 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 132 Offset: 8315412 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 18 Offset: 8315576 Encoding: varint magic: 142 
+                                            Vertex: mode: Vertex Int32Array Size: 148 Offset: 8317672 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 148 Offset: 8316628 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 76.2498 138.049 32.7315 1.0 
+                            Children 
+                                Node 
+                                    black_matt_29 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 323 Offset: 8318168 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 700 Offset: 8327924 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 700 Offset: 8323452 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -76.2498 138.049 32.7315 1.0 
+                            Children 
+                                Node 
+                                    black_matt_28 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 398 Offset: 8330548 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 700 Offset: 8340960 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 700 Offset: 8336412 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -83.8666 138.567 31.7761 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_27 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3550 Offset: 8343592 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 480 Offset: 8348208 Encoding: varint magic: 2919 
+                                                    Vertex: mode: Vertex Int32Array Size: 3005 Offset: 8391912 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3005 Offset: 8371432 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 85.8512 138.706 32.1642 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.000328064 0.0107727 -0.00217819 1.0 
+                                    Children 
+                                        Node 
+                                            silver_07 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 12916 Offset: 8402600 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1950 Offset: 8419024 Encoding: varint magic: 7682 
+                                                    Vertex: mode: Vertex Int32Array Size: 7710 Offset: 8523384 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7710 Offset: 8477048 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            brakes1 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 77.5394 138.716 32.162 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.62939e-06 0.0 -3.8147e-06 1.0 
+                                    Children 
+                                        Node 
+                                            brakes1_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 607 Offset: 8556332 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 776 Offset: 8566756 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 776 Offset: 8562816 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            brakes1 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -77.5394 138.716 32.162 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 0.0 -3.8147e-06 1.0 
+                                    Children 
+                                        Node 
+                                            brakes1_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 690 Offset: 8569192 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 776 Offset: 8580424 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 776 Offset: 8575876 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            plate 
+                            1.0 -1.43051e-06 0.0 0.0 1.43051e-06 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.00619998 214.101 54.7803 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 9.53662e-06 -0.000244141 -0.00133133 1.0 
+                                    Children 
+                                        Node 
+                                            plate_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 456 Offset: 8582912 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 18 Offset: 8583464 Encoding: varint magic: 342 
+                                                    Vertex: mode: Vertex Int32Array Size: 342 Offset: 8587044 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 342 Offset: 8586152 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            tire_mat4 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 76.4699 138.716 32.162 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.62939e-06 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            tire_mat4_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 7863 Offset: 8588296 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 324 Offset: 8598320 Encoding: varint magic: 4020 
+                                                    Vertex: mode: Vertex Int32Array Size: 4020 Offset: 8654500 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4020 Offset: 8629768 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -85.8503 138.726 32.1642 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.000328064 -0.0107727 -0.00217819 1.0 
+                                    Children 
+                                        Node 
+                                            silver_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 12916 Offset: 8667280 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1950 Offset: 8683704 Encoding: varint magic: 7682 
+                                                    Vertex: mode: Vertex Int32Array Size: 7710 Offset: 8791120 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7710 Offset: 8744784 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 83.8665 138.865 31.7761 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_25 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3469 Offset: 8824036 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 579 Offset: 8828556 Encoding: varint magic: 2919 
+                                                    Vertex: mode: Vertex Int32Array Size: 3005 Offset: 8871444 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3005 Offset: 8851052 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 84.6842 153.202 16.0055 1.0 
+                            Children 
+                                Node 
+                                    black_matt_26 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 309 Offset: 8882080 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 6 Offset: 8882464 Encoding: varint magic: 375 
+                                            Vertex: mode: Vertex Int32Array Size: 376 Offset: 8887732 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 376 Offset: 8885268 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_shiny 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.88945e-05 168.867 117.55 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.0137939 0.0183105 1.0 
+                                    Children 
+                                        Node 
+                                            black_shiny_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 10351 Offset: 8889164 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 738 Offset: 8902884 Encoding: varint magic: 5256 
+                                                    Vertex: mode: Vertex Int32Array Size: 5256 Offset: 8953240 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 5256 Offset: 8942400 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 -4.76837e-07 0.0 0.0 4.76837e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.24249e-05 177.015 30.5272 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90735e-06 -1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            silver_d_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1502 Offset: 8973884 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 78 Offset: 8975748 Encoding: varint magic: 1360 
+                                                    Vertex: mode: Vertex Int32Array Size: 1370 Offset: 8989680 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1370 Offset: 8985796 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.43323e-05 177.373 87.6807 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-06 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            red_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 8274 Offset: 8994440 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 795 Offset: 9004828 Encoding: varint magic: 8467 
+                                                    Vertex: mode: Vertex Int32Array Size: 8608 Offset: 9098248 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8608 Offset: 9071988 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            copper 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.06621e-05 180.559 116.806 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            copper_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 964 Offset: 9135588 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 1542 Offset: 9150308 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1542 Offset: 9147224 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.24505e-05 192.425 88.9613 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.0224915 -0.000900269 1.0 
+                                    Children 
+                                        Node 
+                                            red_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 671 Offset: 9155964 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 84 Offset: 9156768 Encoding: varint magic: 450 
+                                                    Vertex: mode: Vertex Int32Array Size: 450 Offset: 9160856 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 450 Offset: 9159956 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-05 193.316 88.8146 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 1.52588e-05 7.62939e-06 1.0 
+                                    Children 
+                                        Node 
+                                            red_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 2055 Offset: 9162992 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 17328 Offset: 9165572 Encoding: varint magic: 2482 
+                                                    Vertex: mode: Vertex Int32Array Size: 19766 Offset: 9399260 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 19766 Offset: 9322472 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            r_lights 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.30153e-05 196.068 89.5876 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.07547 -0.0215302 1.0 
+                                    Children 
+                                        Node 
+                                            r_lights_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 646 Offset: 9553356 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 84 Offset: 9554128 Encoding: varint magic: 409 
+                                                    Vertex: mode: Vertex Int32Array Size: 409 Offset: 9557708 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 409 Offset: 9556888 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -86.3983 -129.876 32.1647 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.000328064 -0.0107727 -0.00217819 1.0 
+                                    Children 
+                                        Node 
+                                            silver_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 12916 Offset: 9559700 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1950 Offset: 9576124 Encoding: varint magic: 7682 
+                                                    Vertex: mode: Vertex Int32Array Size: 7710 Offset: 9683540 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7710 Offset: 9637204 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 84.4149 -129.737 31.7767 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3469 Offset: 9716460 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 579 Offset: 9720980 Encoding: varint magic: 2919 
+                                                    Vertex: mode: Vertex Int32Array Size: 3005 Offset: 9763868 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3005 Offset: 9743476 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 85.2325 -115.399 16.006 1.0 
+                            Children 
+                                Node 
+                                    black_matt_04 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 309 Offset: 9774504 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 6 Offset: 9774888 Encoding: varint magic: 375 
+                                            Vertex: mode: Vertex Int32Array Size: 376 Offset: 9780156 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 376 Offset: 9777692 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.33479e-05 -102.821 92.1952 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 -0.0690002 -0.0285034 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 14556 Offset: 9781588 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 2094 Offset: 9799980 Encoding: varint magic: 8857 
+                                                    Vertex: mode: Vertex Int32Array Size: 8891 Offset: 9930700 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8891 Offset: 9868096 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.52588e-05 -56.55 102.31 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.44299 1.54547 0.0422821 1.0 
+                                    Children 
+                                        Node 
+                                            silver_d_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 16456 Offset: 9969908 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1425 Offset: 9991552 Encoding: varint magic: 8492 
+                                                    Vertex: mode: Vertex Float32Array Size: 8492 Offset: 10077064 Encoding: None 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8492 Offset: 10056368 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.8147e-05 -55.1438 98.635 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.19708 1.31316 -0.0214996 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_09 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3579 Offset: 10178968 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 573 Offset: 10183404 Encoding: varint magic: 2272 
+                                                    Vertex: mode: Vertex Int32Array Size: 2290 Offset: 10209204 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 2290 Offset: 10201552 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 5.34058e-05 -55.0995 98.5629 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.20088 1.28439 -0.0162888 1.0 
+                                    Children 
+                                        Node 
+                                            glass_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 799 Offset: 10219704 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 123 Offset: 10220700 Encoding: varint magic: 541 
+                                                    Vertex: mode: Vertex Int32Array Size: 544 Offset: 10226308 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 544 Offset: 10224952 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.67029e-05 -49.883 103.286 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.293247 1.65312 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 427 Offset: 10228852 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 78 Offset: 10229392 Encoding: varint magic: 672 
+                                                    Vertex: mode: Vertex Int32Array Size: 672 Offset: 10235972 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 672 Offset: 10234196 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            r_glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.30692e-05 196.423 89.5432 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0769653 -0.0222931 1.0 
+                                    Children 
+                                        Node 
+                                            r_glass_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 9521 Offset: 10238948 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 738 Offset: 10251204 Encoding: varint magic: 4855 
+                                                    Vertex: mode: Vertex Int32Array Size: 4855 Offset: 10294648 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4855 Offset: 10284936 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 -4.76837e-07 0.0 0.0 4.76837e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -19.9936 199.49 108.399 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0326216 -0.560516 -0.21315 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 6759 Offset: 10313048 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1326 Offset: 10321568 Encoding: varint magic: 4454 
+                                                    Vertex: mode: Vertex Int32Array Size: 4527 Offset: 10372056 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4527 Offset: 10356248 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.24249e-05 199.537 91.0505 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90735e-06 1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_07 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1362 Offset: 10394336 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 6219 Offset: 10396080 Encoding: varint magic: 1729 
+                                                    Vertex: mode: Vertex Int32Array Size: 7856 Offset: 10486312 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7856 Offset: 10456676 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.35915e-05 199.958 90.9717 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.000671387 -0.00809479 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_08 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 238 Offset: 10545788 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 24 Offset: 10546076 Encoding: varint magic: 172 
+                                                    Vertex: mode: Vertex Int32Array Size: 174 Offset: 10547608 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 174 Offset: 10547260 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.05176e-05 200.046 91.0448 1.0 
+                            Children 
+                                Node 
+                                    glass_04 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 222 Offset: 10548512 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint8Array Size: 6 Offset: 10548784 Encoding: None magic: 184 
+                                            Vertex: mode: Vertex Int32Array Size: 184 Offset: 10550596 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 184 Offset: 10550092 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.42475e-05 204.307 90.9732 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.00361633 0.00572968 1.0 
+                                    Children 
+                                        Node 
+                                            glass_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1673 Offset: 10551420 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 183 Offset: 10553524 Encoding: varint magic: 882 
+                                                    Vertex: mode: Vertex Int32Array Size: 882 Offset: 10560816 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 882 Offset: 10559052 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            d_red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.43271e-05 204.823 46.4019 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.00804138 -0.0143585 1.0 
+                                    Children 
+                                        Node 
+                                            d_red_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1443 Offset: 10564660 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 165 Offset: 10566528 Encoding: varint magic: 852 
+                                                    Vertex: mode: Vertex Int32Array Size: 858 Offset: 10574600 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 858 Offset: 10572400 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            r_glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.67312e-05 205.064 46.4037 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 -0.0111542 -0.0161667 1.0 
+                                    Children 
+                                        Node 
+                                            r_glass_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3074 Offset: 10578700 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 441 Offset: 10582748 Encoding: varint magic: 1673 
+                                                    Vertex: mode: Vertex Int32Array Size: 1674 Offset: 10598708 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1674 Offset: 10594508 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            red 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.67029e-05 205.095 46.3751 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-06 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            red_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 5713 Offset: 10605948 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 75 Offset: 10613032 Encoding: varint magic: 5683 
+                                                    Vertex: mode: Vertex Int32Array Size: 5698 Offset: 10671744 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 5698 Offset: 10653200 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -48.1852 206.688 77.3046 1.0 
+                            Children 
+                                Node 
+                                    chrome_05 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 112 Offset: 10708296 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 267 Offset: 10711164 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 267 Offset: 10710356 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -45.3899 207.139 77.3626 1.0 
+                            Children 
+                                Node 
+                                    silver_d_01 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 78 Offset: 10712372 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 9 Offset: 10712480 Encoding: varint magic: 156 
+                                            Vertex: mode: Vertex Int32Array Size: 159 Offset: 10714156 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 159 Offset: 10713652 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.67142e-05 208.014 34.444 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90735e-06 -0.00564575 0.0240097 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 17310 Offset: 10714664 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1107 Offset: 10737352 Encoding: varint magic: 8564 
+                                                    Vertex: mode: Vertex Int32Array Size: 8564 Offset: 10816572 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8564 Offset: 10797104 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.50111e-05 209.659 86.1769 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 9.50795e-13 0.00367737 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 2344 Offset: 10852872 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 114 Offset: 10855976 Encoding: varint magic: 1109 
+                                                    Vertex: mode: Vertex Int32Array Size: 1109 Offset: 10867604 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1109 Offset: 10864544 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.65273e-05 209.949 86.1769 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.2039e-15 -0.000228882 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 4326 Offset: 10871408 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 720 Offset: 10877252 Encoding: varint magic: 2352 
+                                                    Vertex: mode: Vertex Int32Array Size: 2354 Offset: 10901840 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 2354 Offset: 10895160 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.0499001 210.509 78.1336 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.00252199 0.00932312 0.0373535 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 2790 Offset: 10910024 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 264 Offset: 10913508 Encoding: varint magic: 1734 
+                                                    Vertex: mode: Vertex Int32Array Size: 1741 Offset: 10929792 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1741 Offset: 10926072 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -4.9591e-05 210.591 57.5121 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.8147e-06 3.05176e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            black_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 614 Offset: 10938332 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 600 Offset: 10944904 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 600 Offset: 10943468 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -4.57764e-05 210.624 57.5122 1.0 
+                            Children 
+                                Node 
+                                    body_02 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 425 Offset: 10947192 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 392 Offset: 10951056 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 392 Offset: 10950196 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -49.5254 213.608 46.2379 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.00299835 -0.0338135 -0.00164032 1.0 
+                                    Children 
+                                        Node 
+                                            black_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 143 Offset: 10952540 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 308 Offset: 10955804 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 308 Offset: 10954980 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -49.5263 213.602 46.2516 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -1.52588e-05 3.8147e-06 1.0 
+                                    Children 
+                                        Node 
+                                            body_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 206 Offset: 10956816 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 27 Offset: 10957072 Encoding: varint magic: 235 
+                                                    Vertex: mode: Vertex Int32Array Size: 235 Offset: 10959236 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 235 Offset: 10958748 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            plate 
+                            1.0 -1.43051e-06 0.0 0.0 1.43051e-06 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.00020879 -217.227 41.9443 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -5.72204e-06 0.00465393 -9.91821e-05 1.0 
+                                    Children 
+                                        Node 
+                                            plate_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 456 Offset: 10960108 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 18 Offset: 10960660 Encoding: varint magic: 342 
+                                                    Vertex: mode: Vertex Int32Array Size: 342 Offset: 10964080 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 342 Offset: 10963188 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.0227388 -216.272 59.8293 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.38419e-07 0.000274658 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_13 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 4326 Offset: 10965368 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 720 Offset: 10971212 Encoding: varint magic: 2352 
+                                                    Vertex: mode: Vertex Int32Array Size: 2354 Offset: 10996464 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 2354 Offset: 10989784 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            graphite 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.7124e-05 -214.703 59.3206 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90735e-06 -0.0700378 -0.00365067 1.0 
+                                    Children 
+                                        Node 
+                                            graphite_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 14953 Offset: 11004652 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 7208 Offset: 11092760 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7208 Offset: 11078280 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.90111e-05 -214.569 59.4499 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.0696716 -0.00470352 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_10 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 15901 Offset: 11121004 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 468 Offset: 11142012 Encoding: varint magic: 7761 
+                                                    Vertex: mode: Vertex Int32Array Size: 7761 Offset: 11217296 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7761 Offset: 11199912 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.80887e-05 -213.629 59.9236 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 8.48942e-13 -1.52588e-05 3.8147e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_11 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 8925 Offset: 11246456 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 402 Offset: 11257536 Encoding: varint magic: 6227 
+                                                    Vertex: mode: Vertex Int32Array Size: 6256 Offset: 11321732 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 6256 Offset: 11303284 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -50.0221 -209.07 47.7294 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0581551 -0.0618439 -0.0142975 1.0 
+                                    Children 
+                                        Node 
+                                            black_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 134 Offset: 11353636 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 3 Offset: 11353816 Encoding: varint magic: 270 
+                                                    Vertex: mode: Vertex Int32Array Size: 270 Offset: 11356596 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 270 Offset: 11355792 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -50.018 -209.058 47.7321 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.90735e-05 1.52588e-05 -3.8147e-06 1.0 
+                                    Children 
+                                        Node 
+                                            body_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 456 Offset: 11357500 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 54 Offset: 11358096 Encoding: varint magic: 461 
+                                                    Vertex: mode: Vertex Int32Array Size: 461 Offset: 11362456 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 461 Offset: 11361532 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -5.74082e-06 -200.766 47.1121 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90735e-06 3.33492e-13 -3.8147e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_08 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1245 Offset: 11364016 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 135 Offset: 11365592 Encoding: varint magic: 1317 
+                                                    Vertex: mode: Vertex Int32Array Size: 1354 Offset: 11379704 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1354 Offset: 11375304 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.62587e-05 -196.498 41.1204 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0871429 0.0205383 1.0 
+                                    Children 
+                                        Node 
+                                            silver_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 10029 Offset: 11384960 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 4872 Offset: 11443824 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4872 Offset: 11434080 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.40227e-05 -195.434 36.0847 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-05 -4.57763e-05 -3.05176e-05 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 9169 Offset: 11462876 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 675 Offset: 11474416 Encoding: varint magic: 8079 
+                                                    Vertex: mode: Vertex Int32Array Size: 8170 Offset: 11559596 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8170 Offset: 11536288 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            graphite 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.61076e-05 -195.389 37.0444 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.0208588 -0.0233612 1.0 
+                                    Children 
+                                        Node 
+                                            graphite_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 16040 Offset: 11595028 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1200 Offset: 11616660 Encoding: varint magic: 8064 
+                                                    Vertex: mode: Vertex Int32Array Size: 8064 Offset: 11694292 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 8064 Offset: 11678096 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.05176e-05 -194.025 41.3011 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            glass_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 27 Offset: 11735796 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 28 Offset: 11736120 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 28 Offset: 11736040 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.6423e-05 -193.846 41.0412 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.67029e-05 1.61281e-11 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            black_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 105 Offset: 11736236 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint8Array Size: 6 Offset: 11736368 Encoding: None magic: 120 
+                                                    Vertex: mode: Vertex Int32Array Size: 120 Offset: 11737424 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 120 Offset: 11737184 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.58359e-05 -193.578 41.2497 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -0.032135 0.00928497 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1529 Offset: 11737940 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 123 Offset: 11739852 Encoding: varint magic: 877 
+                                                    Vertex: mode: Vertex Int32Array Size: 884 Offset: 11748004 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 884 Offset: 11746236 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.0243035 -192.419 40.9341 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0545464 -0.0299225 0.102619 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_12 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1378 Offset: 11752080 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 93 Offset: 11753884 Encoding: varint magic: 955 
+                                                    Vertex: mode: Vertex Int32Array Size: 970 Offset: 11764068 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 970 Offset: 11761212 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.89577e-05 -187.308 69.3312 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.28882e-05 -1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_10 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1338 Offset: 11768440 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 165 Offset: 11770164 Encoding: varint magic: 843 
+                                                    Vertex: mode: Vertex Int32Array Size: 846 Offset: 11778320 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 846 Offset: 11776628 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            lights 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.47661e-05 -186.649 72.3794 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.123581 -0.011879 1.0 
+                                    Children 
+                                        Node 
+                                            lights_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 922 Offset: 11782436 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 132 Offset: 11783560 Encoding: varint magic: 608 
+                                                    Vertex: mode: Vertex Int32Array Size: 610 Offset: 11789364 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 610 Offset: 11788144 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.47712e-05 -186.6 72.3794 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0406952 -0.011879 1.0 
+                                    Children 
+                                        Node 
+                                            glass_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1633 Offset: 11792280 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 174 Offset: 11794388 Encoding: varint magic: 909 
+                                                    Vertex: mode: Vertex Int32Array Size: 910 Offset: 11803176 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 910 Offset: 11801356 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.27264e-05 -184.155 19.8819 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.6294e-06 -0.0411377 -0.0274067 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_09 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 2873 Offset: 11807272 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 312 Offset: 11810868 Encoding: varint magic: 1565 
+                                                    Vertex: mode: Vertex Int32Array Size: 1566 Offset: 11825200 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1566 Offset: 11822068 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.41848e-05 -182.732 72.605 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0563202 0.0332947 1.0 
+                                    Children 
+                                        Node 
+                                            glass_07 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 9260 Offset: 11832384 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 918 Offset: 11844472 Encoding: varint magic: 4796 
+                                                    Vertex: mode: Vertex Int32Array Size: 4796 Offset: 11889452 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4796 Offset: 11879740 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.43323e-05 -182.234 73.2306 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-06 -1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            silver_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 8257 Offset: 11909704 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint8Array Size: 9186 Offset: 11920796 Encoding: None magic: 15096 
+                                                    Vertex: mode: Vertex Int32Array Size: 24282 Offset: 12188964 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 24282 Offset: 12104524 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            vd_glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.90735e-05 -176.394 72.2321 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.8147e-06 -6.66983e-13 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            vd_glass_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 861 Offset: 12332952 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 180 Offset: 12334084 Encoding: varint magic: 630 
+                                                    Vertex: mode: Vertex Int32Array Size: 678 Offset: 12341092 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 678 Offset: 12339392 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -3.43323e-05 -173.341 72.6716 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.8147e-06 1.52588e-05 1.52588e-05 1.0 
+                                    Children 
+                                        Node 
+                                            glass_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 229 Offset: 12344312 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 6 Offset: 12344592 Encoding: varint magic: 210 
+                                                    Vertex: mode: Vertex Int32Array Size: 210 Offset: 12346704 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 210 Offset: 12346116 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 1.74846e-07 0.0 0.0 -1.74846e-07 1.0 0.0 1.52588e-05 -172.877 72.2083 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 -1.52588e-05 -7.62939e-06 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_11 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 1623 Offset: 12347648 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 102 Offset: 12349704 Encoding: varint magic: 1435 
+                                                    Vertex: mode: Vertex Int32Array Size: 1438 Offset: 12363820 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1438 Offset: 12359932 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -85.2325 -144.372 16.006 1.0 
+                            Children 
+                                Node 
+                                    black_matt_07 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 309 Offset: 12372320 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint16Array Size: 6 Offset: 12372704 Encoding: varint magic: 375 
+                                            Vertex: mode: Vertex Int32Array Size: 376 Offset: 12378000 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 376 Offset: 12375536 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -78.1169 -142.107 31.8852 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.66793e-12 1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            silver_d_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 4527 Offset: 12379432 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 525 Offset: 12385108 Encoding: varint magic: 3159 
+                                                    Vertex: mode: Vertex Int32Array Size: 3235 Offset: 12428060 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3235 Offset: 12408596 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver_d 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 78.1169 -142.107 31.8852 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            silver_d_06 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 4373 Offset: 12443108 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 477 Offset: 12448676 Encoding: varint magic: 3159 
+                                                    Vertex: mode: Vertex Int32Array Size: 3235 Offset: 12492232 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3235 Offset: 12472828 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -78.0917 -141.008 31.8816 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_23 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 132 Offset: 12507220 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 18 Offset: 12507384 Encoding: varint magic: 142 
+                                                    Vertex: mode: Vertex Int32Array Size: 148 Offset: 12509496 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 148 Offset: 12508452 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 78.0918 -141.008 31.8816 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_20 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 160 Offset: 12510024 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint8Array Size: 6 Offset: 12510220 Encoding: None magic: 146 
+                                                    Vertex: mode: Vertex Int32Array Size: 148 Offset: 12512380 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 148 Offset: 12511356 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -76.8061 -130.791 32.1625 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -1.52588e-05 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_21 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 398 Offset: 12512896 Encoding: varint magic: 0 
+                                                    Vertex: mode: Vertex Int32Array Size: 700 Offset: 12523336 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 700 Offset: 12518788 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 76.8062 -130.791 32.1625 1.0 
+                            Children 
+                                Node 
+                                    black_matt_19 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 323 Offset: 12525980 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 700 Offset: 12535840 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 700 Offset: 12531368 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -84.4148 -130.034 31.7767 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.90735e-06 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_22 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3550 Offset: 12538476 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 480 Offset: 12543092 Encoding: varint magic: 2919 
+                                                    Vertex: mode: Vertex Int32Array Size: 3005 Offset: 12586796 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3005 Offset: 12566316 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 86.4029 -129.895 32.1647 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.000328064 0.0107727 -0.00217819 1.0 
+                                    Children 
+                                        Node 
+                                            silver_04 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 12916 Offset: 12597484 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1950 Offset: 12613908 Encoding: varint magic: 7682 
+                                                    Vertex: mode: Vertex Int32Array Size: 7710 Offset: 12718268 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 7710 Offset: 12671932 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            tire_mat4 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -77.0182 -129.886 32.1625 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            tire_mat4_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 7863 Offset: 12751212 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 324 Offset: 12761236 Encoding: varint magic: 4020 
+                                                    Vertex: mode: Vertex Int32Array Size: 4020 Offset: 12816452 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4020 Offset: 12791720 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            tire_mat4 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 77.0183 -129.885 32.1625 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 7.62939e-06 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            tire_mat4_03 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 7863 Offset: 12829228 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 324 Offset: 12839252 Encoding: varint magic: 4020 
+                                                    Vertex: mode: Vertex Int32Array Size: 4020 Offset: 12895432 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4020 Offset: 12870700 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            brakes1 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -78.1021 -129.885 32.1625 1.0 
+                            Children 
+                                Node 
+                                    brakes1_02 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 690 Offset: 12908212 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 776 Offset: 12919360 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 776 Offset: 12914812 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            brakes1 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 78.1021 -129.885 32.1625 1.0 
+                            Children 
+                                Node 
+                                    brakes1_01 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 607 Offset: 12921848 Encoding: varint magic: 0 
+                                            Vertex: mode: Vertex Int32Array Size: 776 Offset: 12932176 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 776 Offset: 12928236 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black_matt 
+                            1.0 6.03983e-07 0.0 0.0 -6.03983e-07 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -4.30459e-06 -40.1209 131.157 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -6.4373e-06 -0.0216179 -0.0108032 1.0 
+                                    Children 
+                                        Node 
+                                            black_matt_12 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 2878 Offset: 12934600 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 261 Offset: 12938252 Encoding: varint magic: 1572 
+                                                    Vertex: mode: Vertex Int32Array Size: 1572 Offset: 12954968 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 1572 Offset: 12950120 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            vd_glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.12483e-06 -36.5793 132.408 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 -0.00274658 1.0 
+                                    Children 
+                                        Node 
+                                            vd_glass_02 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 866 Offset: 12961228 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 123 Offset: 12962344 Encoding: varint magic: 490 
+                                                    Vertex: mode: Vertex Int32Array Size: 490 Offset: 12966664 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 490 Offset: 12965684 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            chrome 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.21165 -35.8078 123.348 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 -7.62939e-06 1.0 
+                                    Children 
+                                        Node 
+                                            chrome_14 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 95 Offset: 12968360 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint8Array Size: 12 Offset: 12968476 Encoding: None magic: 59 
+                                                    Vertex: mode: Vertex Int32Array Size: 59 Offset: 12969168 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 59 Offset: 12968936 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -0.000597596 -35.1615 132.949 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.19209e-07 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            glass_08 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 183 Offset: 12969432 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint8Array Size: 12 Offset: 12969656 Encoding: None magic: 97 
+                                                    Vertex: mode: Vertex Int32Array Size: 97 Offset: 12970728 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 97 Offset: 12970388 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            interior 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.21146 -33.7688 128.723 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 4.76839e-05 -0.00120926 -0.0124054 1.0 
+                                    Children 
+                                        Node 
+                                            interior_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 3931 Offset: 12971184 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 675 Offset: 12976188 Encoding: varint magic: 2285 
+                                                    Vertex: mode: Vertex Int32Array Size: 2289 Offset: 12999692 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 2289 Offset: 12993420 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            d_glass 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.26303e-05 45.3918 110.062 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.28882e-05 0.0357437 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            d_glass_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 11814 Offset: 13007180 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 657 Offset: 13022608 Encoding: varint magic: 5964 
+                                                    Vertex: mode: Vertex Int32Array Size: 5964 Offset: 13079500 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 5964 Offset: 13066296 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            silver 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -6.1753e-06 18.39 81.4471 1.0 
+                            Children 
+                                Node 
+                                    silver_05 
+                                    Children 
+                                        Geometry 
+                                            Geometry 
+                                            Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 420 Offset: 13103788 Encoding: varint magic: 0 
+                                            Indice: mode: "TRIANGLES" Uint8Array Size: 3 Offset: 13104304 Encoding: None magic: 414 
+                                            Vertex: mode: Vertex Int32Array Size: 414 Offset: 13108608 Encoding: "varint" 
+                                            TexCoord0: mode: TexCoord0 Int32Array Size: 414 Offset: 13107300 Encoding: "varint" 
+                                        Geometry 
+                                            Geometry 
+                        MatrixTransform 
+                            black 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.26388e-05 45.3767 109.694 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -2.28882e-05 -0.00543976 0.0129089 1.0 
+                                    Children 
+                                        Node 
+                                            black_05 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 6231 Offset: 13110568 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 960 Offset: 13118752 Encoding: varint magic: 3422 
+                                                    Vertex: mode: Vertex Float32Array Size: 3422 Offset: 13150476 Encoding: None 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 3422 Offset: 13143304 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            body 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -68.332 53.3352 81.8207 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.00145721 0.00791168 0.0260468 1.0 
+                                    Children 
+                                        Node 
+                                            body_09 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 23924 Offset: 13191540 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 1998 Offset: 13222664 Encoding: varint magic: 12517 
+                                                    Vertex: mode: Vertex Int32Array Size: 12521 Offset: 13346884 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 12521 Offset: 13318932 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
+                        MatrixTransform 
+                            tire_mat4 
+                            1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -76.47 138.716 32.162 1.0 
+                            Children 
+                                MatrixTransform 
+                                    1.0 0.0 -0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -7.62939e-06 0.0 0.0 1.0 
+                                    Children 
+                                        Node 
+                                            tire_mat4_01 
+                                            Children 
+                                                Geometry 
+                                                    Geometry 
+                                                    Indice: mode: "TRIANGLE_STRIP" Uint32Array Size: 7863 Offset: 13408044 Encoding: varint magic: 0 
+                                                    Indice: mode: "TRIANGLES" Uint16Array Size: 324 Offset: 13418068 Encoding: varint magic: 4020 
+                                                    Vertex: mode: Vertex Int32Array Size: 4020 Offset: 13473284 Encoding: "varint" 
+                                                    TexCoord0: mode: TexCoord0 Int32Array Size: 4020 Offset: 13448552 Encoding: "varint" 
+                                                Geometry 
+                                                    Geometry 
