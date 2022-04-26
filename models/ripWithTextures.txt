@@ -1,0 +1,105 @@
+1: Open Chrome and Dev tools (F12), make tool horizontal and go to "Sources" and close all files in sources, hit "Ctrl + Shift + F" and type "this._xhr=" and hit enter, double click on bottom text line to open it
+
+2: Click on "{}" to format code and hit "Ctrl +F" and find this line of code
+[code]
+                        this._xhr = {
+                            response: i,
+                            responseText: i
+
+3:  break point at this line "his._xhr =" and reload page with "Ctrl + R"
+
+4: Console:
+let downloadBlob, downloadURL;
+
+downloadBlob = function(data, fileName, mimeType) {
+  let blob, url;
+  blob = new Blob([data], {
+    type: mimeType
+  });
+  url = window.URL.createObjectURL(blob);
+  downloadURL(url, fileName);
+  setTimeout(function() {
+    return window.URL.revokeObjectURL(url);
+  }, 1000);
+};
+
+downloadURL = function(data, fileName) {
+  let a;
+  a = document.createElement('a');
+  a.href = data;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.style = 'display: none';
+  a.click();
+  a.remove();
+};
+
+downloadBlob(i, 'file.osgjs', 'application/octet-stream');
+
+5: Reload, skip first. 
+
+6: Console:
+let downloadBlob, downloadURL;
+
+downloadBlob = function(data, fileName, mimeType) {
+  let blob, url;
+  blob = new Blob([data], {
+    type: mimeType
+  });
+  url = window.URL.createObjectURL(blob);
+  downloadURL(url, fileName);
+  setTimeout(function() {
+    return window.URL.revokeObjectURL(url);
+  }, 1000);
+};
+
+downloadURL = function(data, fileName) {
+  let a;
+  a = document.createElement('a');
+  a.href = data;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.style = 'display: none';
+  a.click();
+  a.remove();
+};
+
+downloadBlob(i, 'model_file.bin', 'application/octet-stream');
+
+7: Second break point, in t ()
+
+8: Reload, skip 2, skip 2, skip 2
+
+9: Console: 
+let downloadBlob, downloadURL;
+
+downloadBlob = function(data, fileName, mimeType) {
+  let blob, url;
+  blob = new Blob([data], {
+    type: mimeType
+  });
+  url = window.URL.createObjectURL(blob);
+  downloadURL(url, fileName);
+  setTimeout(function() {
+    return window.URL.revokeObjectURL(url);
+  }, 1000);
+};
+
+downloadURL = function(data, fileName) {
+  let a;
+  a = document.createElement('a');
+  a.href = data;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.style = 'display: none';
+  a.click();
+  a.remove();
+};
+
+downloadBlob(i, 'model_file_wireframe.bin', 'application/octet-stream');
+
+10: "file.osgjs" in text editor and open "find and replace" tool and replace all ."binz" with ".bin.gz".
+
+11: Dump script. Put texture folder in the folder. 
+
+12: Blender, script mesh addon to import if not done. 
