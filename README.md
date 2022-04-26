@@ -24,6 +24,20 @@ Low poly Unity assets characters:
 
 https://assetstore.unity.com/packages/3d/characters/humanoids/humans/lowpoly-medieval-peasants-free-pack-122225
 
+<b>To Rip</b>
+
+https://sketchfab.com/3d-models/floating-grass-platforms-v2-6431bae16b22439b979320cc16d788fb
+
+https://sketchfab.com/3d-models/low-poly-beach-16b9af1ae2ce484ebed1ef324752ed9e
+
+https://sketchfab.com/3d-models/ultimate-low-poly-nature-pack-build-your-world-b123129116aa4f4b99ffcc123c141e23
+
+https://sketchfab.com/3d-models/tileable-bridge-pack-6d5dea559b6e4f2399f7f95f46afe8e4
+
+https://sketchfab.com/3d-models/rope-bridge-set-d38b4af28fd144eabcc3a55a834122a4
+
+https://sketchfab.com/3d-models/traffic-barrier-abdd845dbc5a45a198e809807e826e0a
+
 
 <b>OBSTACULOS:</b>
   
