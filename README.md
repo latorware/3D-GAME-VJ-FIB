@@ -38,6 +38,10 @@ https://sketchfab.com/3d-models/rope-bridge-set-d38b4af28fd144eabcc3a55a834122a4
 
 https://sketchfab.com/3d-models/traffic-barrier-abdd845dbc5a45a198e809807e826e0a
 
+Personaje Low Poly:
+
+https://sketchfab.com/3d-models/proportional-low-poly-man-free-download-0bfd0e2b49a348a4b64b20cc8196e3b3
+
 
 <b>OBSTACULOS:</b>
   
