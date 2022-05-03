@@ -32,15 +32,15 @@ https://sketchfab.com/3d-models/low-poly-beach-16b9af1ae2ce484ebed1ef324752ed9e
 
 https://sketchfab.com/3d-models/ultimate-low-poly-nature-pack-build-your-world-b123129116aa4f4b99ffcc123c141e23
 
-https://sketchfab.com/3d-models/tileable-bridge-pack-6d5dea559b6e4f2399f7f95f46afe8e4
-
-https://sketchfab.com/3d-models/rope-bridge-set-d38b4af28fd144eabcc3a55a834122a4
-
 https://sketchfab.com/3d-models/traffic-barrier-abdd845dbc5a45a198e809807e826e0a
 
 Personaje Low Poly:
 
 https://sketchfab.com/3d-models/proportional-low-poly-man-free-download-0bfd0e2b49a348a4b64b20cc8196e3b3
+
+Frutas Low Poly:
+
+https://assetstore.unity.com/packages/3d/props/food/low-poly-fruit-pickups-98135#description
 
 
 <b>OBSTACULOS:</b>
