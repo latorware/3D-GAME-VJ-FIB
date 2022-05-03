@@ -43,11 +43,24 @@ Frutas Low Poly:
 https://assetstore.unity.com/packages/3d/props/food/low-poly-fruit-pickups-98135#description
 
 
-<b>OBSTACULOS:</b>
-  
-  - Roca que se desplaza de lado a lado
-  - Cuerda para trepar
-  - Cañon que lanza objetos
-  - Hacha que se balancea
-  - 
+<b>NIVELES:</b>
+
+1. Juan
+- Aspas que giran
+- 3/4 de círculo que gira
+
+2. David
+- Bloque que se desplaza horizontalmente
+- Palos que aparecen del suelo
+
+3. (Escalada)
+- Cañçon que lanza objetos (frutas)
+- Obstáculos que golpean al escalar
+
+4.
+- Hachas que se balancean
+
+5.
+
+
   
