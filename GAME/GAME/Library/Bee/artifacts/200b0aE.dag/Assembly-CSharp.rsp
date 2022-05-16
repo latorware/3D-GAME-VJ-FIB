@@ -361,6 +361,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/RedPlayerMovement.cs"
 "Assets/Scripts/SpawnWaterBlocks.cs"
 "Assets/StoreAssets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.cs"
 "Assets/StoreAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Scripts/PT_Create_Prefab.cs"
