@@ -45,9 +45,9 @@ public class RedPlayerMovement : MonoBehaviour
             if (input)
             {
                 Vector3 movementDirection = new Vector3(0f, 0f, 1f);
-                float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed; 
+                //float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed; 
                 movementDirection.Normalize();
-                characterController.SimpleMove(movementDirection * magnitude);
+                characterController.SimpleMove(movementDirection * speed);
                 animator.SetBool("isMoving", true);
             }
             else
