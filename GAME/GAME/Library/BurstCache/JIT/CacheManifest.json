@@ -3,7 +3,7 @@
   "Assemblies": [
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-05-16T22:57:29.16786Z"
+      "LastWriteTime": "2022-05-16T23:48:20.153135Z"
     },
     {
       "FullName": "netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
@@ -19,11 +19,11 @@
     },
     {
       "FullName": "Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-05-16T22:57:29.166978Z"
+      "LastWriteTime": "2022-05-16T23:48:20.153693Z"
     },
     {
       "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-05-16T22:57:29.164669Z"
+      "LastWriteTime": "2022-05-16T23:48:20.150728Z"
     },
     {
       "FullName": "mscorlib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -74,8 +74,8 @@
       "AssemblyDependencyIndices": [
         3,
         4,
-        2,
         5,
+        2,
         1
       ]
     },
@@ -112,9 +112,10 @@
       "AssemblyDependencyIndices": [
         3,
         4,
-        5,
+        6,
+        2,
         1,
-        2
+        5
       ]
     },
     {
@@ -125,7 +126,6 @@
       "AssemblyDependencyIndices": [
         3,
         4,
-        6,
         2,
         5,
         1
