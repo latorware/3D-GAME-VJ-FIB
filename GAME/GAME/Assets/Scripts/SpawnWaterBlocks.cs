@@ -8,6 +8,7 @@ public class SpawnWaterBlocks : MonoBehaviour
 
     private void spawnWaterBlocks()
     {
+        
         int k = 40; 
         for (int i = -k; i <= k; i++)
         {
@@ -17,6 +18,7 @@ public class SpawnWaterBlocks : MonoBehaviour
                 a.transform.position = new Vector3((float)(i*49), (float)(1), (float)(j*49));
             }
         }
+        
     }
 
 
