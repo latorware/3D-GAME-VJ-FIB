@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstacleManagerLevel2 : MonoBehaviour
 {
 
-    public Transform punxes1; 
+    public Transform punxes1;
     public Transform punxes2;
     public Transform punxes3;
     public Transform punxes4;
@@ -43,7 +43,7 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     private float rangeGrupPunxes3;
 
     public Transform Girador1;
-    public float speedGirador1; 
+    public float speedGirador1;
 
     public Transform Girador2;
     public float speedGirador2;
@@ -59,7 +59,7 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         posicioInicialYPunxa3 = punxes3.position.y;
         posicioInicialYPunxa4 = punxes4.position.y;
         pujantGrupPunxes1 = false;
-        rangeGrupPunxes1 = 5f; 
+        rangeGrupPunxes1 = 5f;
         StartCoroutine(MouGrupPunxes1());
 
         posicioInicialYPunxa8 = punxes8.position.y;
@@ -85,28 +85,28 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         Girador2.Rotate(0f, -speedGirador2 * Time.deltaTime, 0f, Space.Self);
     }
 
-    IEnumerator MouGrupPunxes1()
+    private IEnumerator MouGrupPunxes1()
     {
         while (true)
         {
 
-            
-            if (punxes1.position.y > posicioInicialYPunxa1)
+
+            if ((punxes1.position.y > posicioInicialYPunxa1) && (pujantGrupPunxes1))
             {
                 pujantGrupPunxes1 = false;
-                punxes1.position = new Vector3(punxes1.position.x, posicioInicialYPunxa1, punxes1.position.z);
-                punxes2.position = new Vector3(punxes2.position.x, posicioInicialYPunxa2, punxes2.position.z);
-                punxes3.position = new Vector3(punxes3.position.x, posicioInicialYPunxa3, punxes3.position.z);
-                punxes4.position = new Vector3(punxes4.position.x, posicioInicialYPunxa4, punxes4.position.z);
-                yield return new WaitForSeconds(0f);
+                //punxes1.position = new Vector3(punxes1.position.x, posicioInicialYPunxa1, punxes1.position.z);
+                //punxes2.position = new Vector3(punxes2.position.x, posicioInicialYPunxa2, punxes2.position.z);
+                //punxes3.position = new Vector3(punxes3.position.x, posicioInicialYPunxa3, punxes3.position.z);
+                //punxes4.position = new Vector3(punxes4.position.x, posicioInicialYPunxa4, punxes4.position.z);
+                yield return new WaitForSeconds(1f);
             }
-            else if (punxes1.position.y < (posicioInicialYPunxa1 - rangeGrupPunxes1))
+            else if ((punxes1.position.y < (posicioInicialYPunxa1 - rangeGrupPunxes1)) && (!pujantGrupPunxes1))
             {
                 pujantGrupPunxes1 = true;
-                punxes1.position = new Vector3(punxes1.position.x, posicioInicialYPunxa1 - rangeGrupPunxes1, punxes1.position.z);
-                punxes2.position = new Vector3(punxes2.position.x, posicioInicialYPunxa2 - rangeGrupPunxes1, punxes2.position.z);
-                punxes3.position = new Vector3(punxes3.position.x, posicioInicialYPunxa3 - rangeGrupPunxes1, punxes3.position.z);
-                punxes4.position = new Vector3(punxes4.position.x, posicioInicialYPunxa4 - rangeGrupPunxes1, punxes4.position.z);
+                //punxes1.position = new Vector3(punxes1.position.x, posicioInicialYPunxa1 - rangeGrupPunxes1, punxes1.position.z);
+                //punxes2.position = new Vector3(punxes2.position.x, posicioInicialYPunxa2 - rangeGrupPunxes1, punxes2.position.z);
+                //punxes3.position = new Vector3(punxes3.position.x, posicioInicialYPunxa3 - rangeGrupPunxes1, punxes3.position.z);
+                //punxes4.position = new Vector3(punxes4.position.x, posicioInicialYPunxa4 - rangeGrupPunxes1, punxes4.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else
@@ -132,30 +132,30 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     }
 
 
-    IEnumerator MouGrupPunxes2()
+    private IEnumerator MouGrupPunxes2()
     {
         while (true)
         {
 
 
-            if (punxes8.position.y > posicioInicialYPunxa8)
+            if ((punxes8.position.y > posicioInicialYPunxa8) && (pujantGrupPunxes2))
             {
                 pujantGrupPunxes2 = false;
-                punxes6.position = new Vector3(punxes6.position.x, posicioInicialYPunxa6, punxes6.position.z);
-                punxes7.position = new Vector3(punxes7.position.x, posicioInicialYPunxa7, punxes7.position.z);
-                punxes8.position = new Vector3(punxes8.position.x, posicioInicialYPunxa8, punxes8.position.z);
-                punxes9.position = new Vector3(punxes9.position.x, posicioInicialYPunxa9, punxes9.position.z);
-                punxes10.position = new Vector3(punxes10.position.x, posicioInicialYPunxa10, punxes10.position.z);
-                yield return new WaitForSeconds(0f);
+                //punxes6.position = new Vector3(punxes6.position.x, posicioInicialYPunxa6, punxes6.position.z);
+                //punxes7.position = new Vector3(punxes7.position.x, posicioInicialYPunxa7, punxes7.position.z);
+                //punxes8.position = new Vector3(punxes8.position.x, posicioInicialYPunxa8, punxes8.position.z);
+                //punxes9.position = new Vector3(punxes9.position.x, posicioInicialYPunxa9, punxes9.position.z);
+                //punxes10.position = new Vector3(punxes10.position.x, posicioInicialYPunxa10, punxes10.position.z);
+                yield return new WaitForSeconds(1f);
             }
-            else if (punxes8.position.y < (posicioInicialYPunxa8 - rangeGrupPunxes2))
+            else if ((punxes8.position.y < (posicioInicialYPunxa8 - rangeGrupPunxes2)) && (!pujantGrupPunxes2))
             {
                 pujantGrupPunxes2 = true;
-                punxes6.position = new Vector3(punxes6.position.x, posicioInicialYPunxa6 - rangeGrupPunxes2, punxes6.position.z);
-                punxes7.position = new Vector3(punxes7.position.x, posicioInicialYPunxa7 - rangeGrupPunxes2, punxes7.position.z);
-                punxes8.position = new Vector3(punxes8.position.x, posicioInicialYPunxa8 - rangeGrupPunxes2, punxes8.position.z);
-                punxes9.position = new Vector3(punxes9.position.x, posicioInicialYPunxa9 - rangeGrupPunxes2, punxes9.position.z);
-                punxes10.position = new Vector3(punxes10.position.x, posicioInicialYPunxa10 - rangeGrupPunxes2, punxes10.position.z);
+                //punxes6.position = new Vector3(punxes6.position.x, posicioInicialYPunxa6 - rangeGrupPunxes2, punxes6.position.z);
+                //punxes7.position = new Vector3(punxes7.position.x, posicioInicialYPunxa7 - rangeGrupPunxes2, punxes7.position.z);
+                //punxes8.position = new Vector3(punxes8.position.x, posicioInicialYPunxa8 - rangeGrupPunxes2, punxes8.position.z);
+                //punxes9.position = new Vector3(punxes9.position.x, posicioInicialYPunxa9 - rangeGrupPunxes2, punxes9.position.z);
+                //punxes10.position = new Vector3(punxes10.position.x, posicioInicialYPunxa10 - rangeGrupPunxes2, punxes10.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else
@@ -183,22 +183,22 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     }
 
 
-    IEnumerator MouGrupPunxes3()
+    private IEnumerator MouGrupPunxes3()
     {
         while (true)
         {
 
 
-            if (punxes11.position.y > posicioInicialYPunxa11)
+            if ((punxes11.position.y > posicioInicialYPunxa11) && (pujantGrupPunxes3))
             {
                 pujantGrupPunxes3 = false;
-                punxes11.position = new Vector3(punxes11.position.x, posicioInicialYPunxa11, punxes11.position.z);
-                yield return new WaitForSeconds(0f);
+                //punxes11.position = new Vector3(punxes11.position.x, posicioInicialYPunxa11, punxes11.position.z);
+                yield return new WaitForSeconds(0.5f);
             }
-            else if (punxes11.position.y < (posicioInicialYPunxa11 - rangeGrupPunxes3))
+            else if ((punxes11.position.y < (posicioInicialYPunxa11 - rangeGrupPunxes3)) && (!pujantGrupPunxes3))
             {
                 pujantGrupPunxes3 = true;
-                punxes11.position = new Vector3(punxes11.position.x, posicioInicialYPunxa11 - rangeGrupPunxes3, punxes11.position.z);
+                //punxes11.position = new Vector3(punxes11.position.x, posicioInicialYPunxa11 - rangeGrupPunxes3, punxes11.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else
