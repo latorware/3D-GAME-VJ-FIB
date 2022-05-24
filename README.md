@@ -46,21 +46,24 @@ https://assetstore.unity.com/packages/3d/props/food/low-poly-fruit-pickups-98135
 <b>NIVELES:</b>
 
 1. Juan
-- Aspas que giran
+- Bloques que se desplazan horizontalmente
 - 3/4 de círculo que gira
 
 2. David
-- Bloque que se desplaza horizontalmente
+- Aspas que giras
 - Palos que aparecen del suelo
 
-3. (Escalada)
-- Cañçon que lanza objetos (frutas)
-- Obstáculos que golpean al escalar
+3. TOBOGAN
+- Péndulos que se balancean
+- Objetos arrojadizos o circulo vertical con agujero
 
-4.
-- Hachas que se balancean
+4. ESCALADA
+- Objetos que golpean al escalar
+- Martillos
 
-5.
+5. ESCALERAS
+- Palos que giran
+- Puertas rotatorias
 
 
   
