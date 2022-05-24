@@ -55,7 +55,7 @@ https://assetstore.unity.com/packages/3d/props/food/low-poly-fruit-pickups-98135
 
 3. TOBOGAN
 - Péndulos que se balancean
-- Objetos arrojadizos
+- Objetos arrojadizos o circulo vertical con agujero
 
 4. ESCALADA
 - Objetos que golpean al escalar
