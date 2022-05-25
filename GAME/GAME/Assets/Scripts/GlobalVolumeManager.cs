@@ -56,4 +56,34 @@ public class GlobalVolumeManager : MonoBehaviour
 
         yield return null; 
     }
+
+
+    public IEnumerator transitionExposureBlanc(float duration)
+    {
+        float currentTemps = 0.0f;
+
+        while (true)
+        {
+            currentTemps += Time.deltaTime;
+            if (currentTemps < (duration / 2.0f))
+            { //fem menys exposicio
+                ColorAdjustment.postExposure.value = (currentTemps / (duration / 2.0f)) * (8.0f);
+                yield return null;
+            }
+            else
+            { //tornem la expo a com estava
+                ColorAdjustment.postExposure.value = (1.0f - ((currentTemps - (duration / 2.0f)) / (duration / 2.0f))) * (8.0f);
+                yield return null;
+            }
+
+
+
+            if (currentTemps > duration)
+            {
+                ColorAdjustment.postExposure.value = 0f; break;
+            }
+        }
+
+        yield return null;
+    }
 }

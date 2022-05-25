@@ -22,12 +22,16 @@ public class RedPlayerMovement : MonoBehaviour
     public PathCreator pathCreator4;
     public PathCreator pathCreator5;
 
-    //Nivell 1
+    //Nivell 2
     public float forceGrupPunxes1;
     public float forceGrupPunxes2;
     public float forceGrupPunxes3;
     public float forceGirador1; 
     public float forceGirador2;
+
+    //Nivell 1
+    public float forceTorusNivell1; 
+
 
 
     [HideInInspector]
@@ -45,7 +49,7 @@ public class RedPlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody>();
         myTransform = GetComponent<Transform>();
         myRigidbody.sleepThreshold = 0.0f;
-
+        canviantNivell = false;
         ComensaNivell(1); 
 
     }
@@ -82,6 +86,18 @@ public class RedPlayerMovement : MonoBehaviour
             colisionat = true;
             animator.SetBool("isMoving", false);
         }
+        else if (collision.gameObject.name == "Torus1")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forceTorusNivell1);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "Torus2")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forceTorusNivell1);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
 
     }
 
@@ -90,57 +106,90 @@ public class RedPlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (myRigidbody.velocity.y < FallingThreshold)
+        if (!canviantNivell)
         {
-            Falling = true;
-            animator.SetBool("isMoving", false);
-        }
-        else
-        {
-            Falling = false;
-        }
-
-        if (!Falling && !colisionat && !fentRestart)
-        {
-            if (Input.GetKey(KeyCode.W))
+            if ((Input.GetKey(KeyCode.Alpha1)) && (currentNivell != 1))
             {
-                if (currentNivell == 1)
-                {
-                    MouNivell1(); 
-                }
-                else if (currentNivell == 2)
-                {
-                    MouNivell2(); 
-                }
-                else if (currentNivell == 3)
-                {
-                    MouNivell3();
-                }
-                else if (currentNivell == 4)
-                {
-                    MouNivell4();
-                }
-                else if (currentNivell == 5)
-                {
-                    MouNivell5();
-                }
+                canviantNivell = true;
+                animator.SetBool("isMoving", false);
+                StartCoroutine(canviaNivell(1)); 
+            }
+            else if ((Input.GetKey(KeyCode.Alpha2)) && (currentNivell != 2))
+            {
+                canviantNivell = true;
+                animator.SetBool("isMoving", false);
+                StartCoroutine(canviaNivell(2));
+            }
+            else if ((Input.GetKey(KeyCode.Alpha3)) && (currentNivell != 3))
+            {
+                canviantNivell = true;
+                animator.SetBool("isMoving", false);
+                StartCoroutine(canviaNivell(3));
+            }
+            else if ((Input.GetKey(KeyCode.Alpha4)) && (currentNivell != 4))
+            {
+                canviantNivell = true;
+                animator.SetBool("isMoving", false);
+                StartCoroutine(canviaNivell(4));
+            }
+            else if ((Input.GetKey(KeyCode.Alpha5)) && (currentNivell != 5))
+            {
+                canviantNivell = true;
+                animator.SetBool("isMoving", false);
+                StartCoroutine(canviaNivell(5));
             }
             else
             {
-                animator.SetBool("isMoving", false);
+                if (myRigidbody.velocity.y < FallingThreshold)
+                {
+                    Falling = true;
+                    animator.SetBool("isMoving", false);
+                }
+                else
+                {
+                    Falling = false;
+                }
+
+                if (!Falling && !colisionat && !fentRestart)
+                {
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        if (currentNivell == 1)
+                        {
+                            MouNivell1();
+                        }
+                        else if (currentNivell == 2)
+                        {
+                            MouNivell2();
+                        }
+                        else if (currentNivell == 3)
+                        {
+                            MouNivell3();
+                        }
+                        else if (currentNivell == 4)
+                        {
+                            MouNivell4();
+                        }
+                        else if (currentNivell == 5)
+                        {
+                            MouNivell5();
+                        }
+                    }
+                    else
+                    {
+                        animator.SetBool("isMoving", false);
+                    }
+                }
+
+
+                else if (colisionat && !fentRestart)
+                { //reseteja 
+                    fentRestart = true;
+                    StartCoroutine(restartNivell());
+                }
             }
+
         }
-
-
-        else if (colisionat && !fentRestart)
-        { //reseteja 
-            fentRestart = true;
-            StartCoroutine(restartNivell()); 
-        }
-
-
-
-
 
 
 
@@ -150,9 +199,9 @@ public class RedPlayerMovement : MonoBehaviour
 
     private void ComensaNivell(int nivell)
     {
+        myRigidbody.useGravity = true;
         Falling = false;
         colisionat = false;
-        fentRestart = false; 
         currentNivell = nivell;
         //posicio i mirar en principi nivell
         pathState = 0f;
@@ -160,19 +209,31 @@ public class RedPlayerMovement : MonoBehaviour
         {
             Vector3 pathPosition = pathCreator1.path.GetPointAtDistance(pathState);
             myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
-            transform.LookAt(new Vector3(0f, 0f, 5000f));
+            transform.LookAt(new Vector3(5000f, 0f, 0f));
         }
         else if (nivell == 2)
         {
+            Vector3 pathPosition = pathCreator2.path.GetPointAtDistance(pathState);
+            myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
+            transform.LookAt(new Vector3(0f, 0f, 5000f));
         }
         else if (nivell == 3)
         {
+            Vector3 pathPosition = pathCreator3.path.GetPointAtDistance(pathState);
+            myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
+            transform.LookAt(new Vector3(0f, 0f, 5000f));
         }
         else if (nivell == 4)
-        { 
+        {
+            Vector3 pathPosition = pathCreator4.path.GetPointAtDistance(pathState);
+            myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
+            transform.LookAt(new Vector3(0f, 0f, -5000f));
         }
         else if (nivell == 5)
-        { 
+        {
+            Vector3 pathPosition = pathCreator5.path.GetPointAtDistance(pathState);
+            myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
+            transform.LookAt(new Vector3(5000f , 0f, 0f));
         }
     }
 
@@ -188,18 +249,52 @@ public class RedPlayerMovement : MonoBehaviour
 
     private void MouNivell2()
     {
+        pathState += speed * Time.deltaTime;
+        Vector3 pathPosition = pathCreator2.path.GetPointAtDistance(pathState);
+        Vector3 pathPositionNext = pathCreator2.path.GetPointAtDistance(pathState * 1.01f);
+        myTransform.position = new Vector3((float)pathPosition.x, myTransform.position.y, (float)pathPosition.z);
+        transform.LookAt(new Vector3((float)pathPositionNext.x, myTransform.position.y, (float)pathPositionNext.z));
+        animator.SetBool("isMoving", true);
     }
 
     private void MouNivell3()
     {
+        pathState += speed * Time.deltaTime;
+        Vector3 pathPosition = pathCreator3.path.GetPointAtDistance(pathState);
+        Vector3 pathPositionNext = pathCreator3.path.GetPointAtDistance(pathState * 1.01f);
+        myTransform.position = new Vector3((float)pathPosition.x, myTransform.position.y, (float)pathPosition.z);
+        transform.LookAt(new Vector3((float)pathPositionNext.x, myTransform.position.y, (float)pathPositionNext.z));
+        animator.SetBool("isMoving", true);
     }
 
     private void MouNivell4()
     {
+        pathState += speed * Time.deltaTime;
+        Vector3 pathPosition = pathCreator4.path.GetPointAtDistance(pathState);
+        Vector3 pathPositionNext = pathCreator4.path.GetPointAtDistance(pathState * 1.01f);
+        if (pathState > 286.0f)
+        {
+            myRigidbody.useGravity = false; 
+            myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
+            //transform.LookAt(new Vector3((float)pathPositionNext.x, (float)pathPosition.y, (float)pathPositionNext.z));
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            myTransform.position = new Vector3((float)pathPosition.x, myTransform.position.y, (float)pathPosition.z);
+            transform.LookAt(new Vector3((float)pathPositionNext.x, myTransform.position.y, (float)pathPositionNext.z));
+            animator.SetBool("isMoving", true);
+        }
     }
 
     private void MouNivell5()
     {
+        pathState += speed * Time.deltaTime;
+        Vector3 pathPosition = pathCreator5.path.GetPointAtDistance(pathState);
+        Vector3 pathPositionNext = pathCreator5.path.GetPointAtDistance(pathState * 1.01f);
+        myTransform.position = new Vector3((float)pathPosition.x, myTransform.position.y, (float)pathPosition.z);
+        transform.LookAt(new Vector3((float)pathPositionNext.x, myTransform.position.y, (float)pathPositionNext.z));
+        animator.SetBool("isMoving", true);
     }
 
     
@@ -215,9 +310,16 @@ public class RedPlayerMovement : MonoBehaviour
         yield return null; 
     }
 
-    private IEnumerator canviaNivell(int anterior, int seguent)
+    private IEnumerator canviaNivell(int nivell)
     {
-        
+        //yield return new WaitForSeconds(2f);
+        StartCoroutine(volumeManager.transitionExposureBlanc(2f));
+        yield return new WaitForSeconds(1f);
+        myRigidbody.velocity = Vector3.zero;
+        ComensaNivell(nivell);
+        yield return new WaitForSeconds(1f);
+        canviantNivell = false; 
+        yield return null;
     }
 
 

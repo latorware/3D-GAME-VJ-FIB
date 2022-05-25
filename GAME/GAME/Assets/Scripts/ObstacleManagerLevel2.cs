@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstacleManagerLevel2 : MonoBehaviour
 {
-
+    //Nivell 2
     public Transform punxes1;
     public Transform punxes2;
     public Transform punxes3;
@@ -49,6 +49,13 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public float speedGirador2;
 
 
+    //Nivell 1
+    public Transform Torus1Nivell1;
+    public float speedTorus1Nivell1;
+    public Transform Torus2Nivell1;
+    public float speedTorus2Nivell1;
+
+
 
 
     // Start is called before the first frame update
@@ -83,6 +90,8 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     {
         Girador1.Rotate(0f, -speedGirador1 * Time.deltaTime, 0f, Space.Self);
         Girador2.Rotate(0f, -speedGirador2 * Time.deltaTime, 0f, Space.Self);
+        Torus1Nivell1.Rotate(0f, 0f, -speedTorus1Nivell1 * Time.deltaTime, Space.Self);
+        Torus2Nivell1.Rotate(0f,0f, speedTorus2Nivell1 * Time.deltaTime, Space.Self);
     }
 
     private IEnumerator MouGrupPunxes1()
