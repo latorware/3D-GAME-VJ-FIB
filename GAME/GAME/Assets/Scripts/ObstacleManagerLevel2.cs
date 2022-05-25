@@ -115,6 +115,13 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public float speedRoda1;
     public Transform Roda2;
     public float speedRoda2;
+    public Transform d8;
+    private float posicioInicialZd8;
+    bool fentEsquerrad8;
+    private float ranged8;
+    public float speedd8;
+    public Transform Girador3;
+    public float speedGirador3;
 
 
 
@@ -169,7 +176,11 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         StartCoroutine(MouPorta2());
         porta31.Rotate(0f, -90, 0f, Space.Self);
         StartCoroutine(MouPorta4());
-        StartCoroutine(MouRoda2()); 
+        StartCoroutine(MouRoda2());
+        posicioInicialZd8 = d8.localPosition.z;
+        fentEsquerrad8 = true;
+        ranged8 = 10f;
+        StartCoroutine(Moud8());
 
     }
 
@@ -208,6 +219,7 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         porta32.Rotate(0f, speedPorta3 * Time.deltaTime, 0f, Space.Self);
 
         Roda1.Rotate(0f, 0f, -speedRoda1 * Time.deltaTime, Space.Self);
+        Girador3.Rotate(0f, speedGirador3 * Time.deltaTime, 0f, Space.Self);
 
 
 
@@ -488,9 +500,41 @@ public class ObstacleManagerLevel2 : MonoBehaviour
             }
             else
             {
-                Roda2.localRotation = Quaternion.Euler(0, 0, angle);
+                Roda2.localRotation = Quaternion.Euler(90, 0, angle);
                 yield return null;
             }
+        }
+        
+    }
+
+    private IEnumerator Moud8()
+    {
+        while (true)
+        {
+
+
+            if ((d8.localPosition.z > posicioInicialZd8) && (!fentEsquerrad8))
+            {
+                fentEsquerrad8 = true;
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((d8.localPosition.z < (posicioInicialZd8 - ranged8)) && (fentEsquerrad8))
+            {
+                fentEsquerrad8 = false;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentEsquerrad8)
+                {
+                    d8.Translate(new Vector3(0f, 0f, -speedd8 * Time.deltaTime), Space.Self);
+                }
+                else
+                {
+                    d8.Translate(new Vector3(0f, 0f, +speedd8 * Time.deltaTime), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
         }
 
     }

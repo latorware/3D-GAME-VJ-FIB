@@ -132,6 +132,18 @@ public class RedPlayerMovement : MonoBehaviour
             colisionat = true;
             animator.SetBool("isMoving", false);
         }
+        else if (collision.gameObject.name == "d8")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forced);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "cGran3")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forceGirador1);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
 
     }
 
@@ -234,6 +246,9 @@ public class RedPlayerMovement : MonoBehaviour
     private void ComensaNivell(int nivell)
     {
         myRigidbody.useGravity = true;
+        myRigidbody.velocity = Vector3.zero;
+        myRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        myRigidbody.velocity = Vector3.zero;
         Falling = false;
         colisionat = false;
         currentNivell = nivell;
