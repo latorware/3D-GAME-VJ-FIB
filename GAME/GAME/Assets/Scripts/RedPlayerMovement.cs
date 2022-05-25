@@ -34,7 +34,8 @@ public class RedPlayerMovement : MonoBehaviour
     private bool Falling; 
     float pathState;
     bool colisionat;
-    bool fentRestart; 
+    bool fentRestart;
+    bool canviantNivell; 
 
 
     // Start is called before the first frame update
@@ -205,7 +206,7 @@ public class RedPlayerMovement : MonoBehaviour
     private IEnumerator restartNivell()
     {
         yield return new WaitForSeconds(2f);
-        volumeManager.transitionExposure(2f);
+        StartCoroutine(volumeManager.transitionExposureNegre(2f));
         yield return new WaitForSeconds(1f);
         myRigidbody.velocity = Vector3.zero;
         ComensaNivell(currentNivell);
@@ -213,7 +214,12 @@ public class RedPlayerMovement : MonoBehaviour
         fentRestart = false; 
         yield return null; 
     }
-    
+
+    private IEnumerator canviaNivell(int anterior, int seguent)
+    {
+        
+    }
+
 
     /*
     private IEnumerator TransicioNivell(int anterior, int següent)
