@@ -36,8 +36,12 @@ public class RedPlayerMovement : MonoBehaviour
 
     //Nivell 3
     public float forcePendulum;
-    public float forceAspa; 
+    public float forceAspa;
 
+
+    //Nivell 5
+    public float forcePorta;
+    public float forceRoda; 
 
 
     [HideInInspector]
@@ -113,6 +117,18 @@ public class RedPlayerMovement : MonoBehaviour
         else if (collision.gameObject.name == "pal2aspa1" || collision.gameObject.name == "pal1aspa1" || collision.gameObject.name == "pal1aspa2" || collision.gameObject.name == "pal2aspa2")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceAspa);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "porta11" || collision.gameObject.name == "porta12" || collision.gameObject.name == "porta21" || collision.gameObject.name == "porta22" || collision.gameObject.name == "porta31" || collision.gameObject.name == "porta32" || collision.gameObject.name == "porta41" || collision.gameObject.name == "porta42")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forcePorta);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "Roda1Objecte1" || collision.gameObject.name == "Roda1Objecte2" || collision.gameObject.name == "Roda1Objecte3" || collision.gameObject.name == "Roda1Objecte4" || collision.gameObject.name == "Roda2Objecte1" || collision.gameObject.name == "Roda2Objecte2" || collision.gameObject.name == "Roda2Objecte3" || collision.gameObject.name == "Roda2Objecte4")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forceRoda);
             colisionat = true;
             animator.SetBool("isMoving", false);
         }

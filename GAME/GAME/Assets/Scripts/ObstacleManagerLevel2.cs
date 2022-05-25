@@ -98,6 +98,24 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public Transform aspa2;
     public float speedaspa2;
 
+    //Nivell 5
+    public Transform porta11;
+    public float speedPorta1;
+    public Transform porta12;
+    public Transform porta21;
+    public float speedPorta2;
+    public Transform porta22;
+    public Transform porta31;
+    public float speedPorta3;
+    public Transform porta32;
+    public Transform porta41;
+    public float speedPorta4;
+    public Transform porta42;
+    public Transform Roda1;
+    public float speedRoda1;
+    public Transform Roda2;
+    public float speedRoda2;
+
 
 
 
@@ -147,6 +165,11 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         StartCoroutine(Moud3());
 
 
+        //Nivell 5
+        StartCoroutine(MouPorta2());
+        porta31.Rotate(0f, -90, 0f, Space.Self);
+        StartCoroutine(MouPorta4());
+        StartCoroutine(MouRoda2()); 
 
     }
 
@@ -176,6 +199,18 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         pendulum7.localRotation = Quaternion.Euler(0, 0, angle);
         aspa1.Rotate(-speedaspa1 * Time.deltaTime, 0f, 0f, Space.Self);
         aspa2.Rotate(speedaspa2 * Time.deltaTime, 0f, 0f, Space.Self);
+
+        //Nivell 5
+        porta11.Rotate(0f, -speedPorta1 * Time.deltaTime, 0f, Space.Self);
+        porta12.Rotate(0f, speedPorta1 * Time.deltaTime, 0f, Space.Self);
+
+        porta31.Rotate(0f, -speedPorta3 * Time.deltaTime, 0f, Space.Self);
+        porta32.Rotate(0f, speedPorta3 * Time.deltaTime, 0f, Space.Self);
+
+        Roda1.Rotate(0f, 0f, -speedRoda1 * Time.deltaTime, Space.Self);
+
+
+
     }
 
     private IEnumerator MouGrupPunxes1()
@@ -385,6 +420,77 @@ public class ObstacleManagerLevel2 : MonoBehaviour
                 }
             }
             yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+
+    private IEnumerator MouPorta2()
+    {
+        float angle = 0f; 
+        while (true)
+        {
+
+            angle += -speedPorta2 * Time.deltaTime;
+             
+            if (angle < -180f)
+            {
+                angle = 0f;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                porta21.localRotation = Quaternion.Euler(0, angle, 0);
+                porta22.localRotation = Quaternion.Euler(0, -angle, 0);
+                yield return null;
+            }
+        }
+
+    }
+
+    private IEnumerator MouPorta4()
+    {
+        float angle = 0f;
+        while (true)
+        {
+
+            angle += -speedPorta4 * Time.deltaTime;
+
+            if (angle < -180f)
+            {
+                angle = 0f;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                porta41.localRotation = Quaternion.Euler(-angle, 0, 0);
+                porta42.localRotation = Quaternion.Euler(-angle-90f, 0, 0);
+                yield return null;
+            }
+        }
+
+    }
+
+    private IEnumerator MouRoda2()
+    {
+        float current = 0f;
+        float angle = 0f; 
+        while (true)
+        {
+
+            angle += speedRoda2 * Time.deltaTime;
+            current += speedRoda2 * Time.deltaTime; 
+
+            if (current > 45f)
+            {
+                current = 0f;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                Roda2.localRotation = Quaternion.Euler(0, 0, angle);
+                yield return null;
+            }
         }
 
     }
