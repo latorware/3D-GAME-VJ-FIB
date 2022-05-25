@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnWaterBlocks : MonoBehaviour
 {
+    
     public GameObject waterBlockPrefab;
 
     private void spawnWaterBlocks()
@@ -33,4 +34,5 @@ public class SpawnWaterBlocks : MonoBehaviour
     {
         
     }
+    
 }
