@@ -31,7 +31,12 @@ public class RedPlayerMovement : MonoBehaviour
 
     //Nivell 1
     public float forceTorusNivell1;
-    public float forced; 
+    public float forced;
+
+
+    //Nivell 3
+    public float forcePendulum;
+    public float forceAspa; 
 
 
 
@@ -66,7 +71,7 @@ public class RedPlayerMovement : MonoBehaviour
         else if (collision.gameObject.name == "punxes8")
         {
             myRigidbody.AddForce(new Vector3(0f, 1f, 1f) * forceGrupPunxes2);
-            colisionat=true;
+            colisionat = true;
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "punxes11")
@@ -96,6 +101,18 @@ public class RedPlayerMovement : MonoBehaviour
         else if (collision.gameObject.name == "d2" || collision.gameObject.name == "d1" || collision.gameObject.name == "d3")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forced);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "f11" || collision.gameObject.name == "f22" || collision.gameObject.name == "f33" || collision.gameObject.name == "f44" || collision.gameObject.name == "f55" || collision.gameObject.name == "f66" || collision.gameObject.name == "f77")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forcePendulum);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "pal2aspa1" || collision.gameObject.name == "pal1aspa1" || collision.gameObject.name == "pal1aspa2" || collision.gameObject.name == "pal2aspa2")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forceAspa);
             colisionat = true;
             animator.SetBool("isMoving", false);
         }

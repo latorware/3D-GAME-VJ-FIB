@@ -71,6 +71,34 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public float speedd3;
 
 
+    //Nivell 3
+    public Transform pendulum1; 
+    public float MaxAngleDeflectionPendulum1;
+    public float SpeedPendulum1;
+    public Transform pendulum2;
+    public float MaxAngleDeflectionPendulum2;
+    public float SpeedPendulum2;
+    public Transform pendulum3;
+    public float MaxAngleDeflectionPendulum3;
+    public float SpeedPendulum3;
+    public Transform pendulum4;
+    public float MaxAngleDeflectionPendulum4;
+    public float SpeedPendulum4;
+    public Transform pendulum5;
+    public float MaxAngleDeflectionPendulum5;
+    public float SpeedPendulum5;
+    public Transform pendulum6;
+    public float MaxAngleDeflectionPendulum6;
+    public float SpeedPendulum6;
+    public Transform pendulum7;
+    public float MaxAngleDeflectionPendulum7;
+    public float SpeedPendulum7;
+    public Transform aspa1;
+    public float speedaspa1;
+    public Transform aspa2;
+    public float speedaspa2;
+
+
 
 
     // Start is called before the first frame update
@@ -120,7 +148,6 @@ public class ObstacleManagerLevel2 : MonoBehaviour
 
 
 
-
     }
 
     // Update is called once per frame
@@ -130,6 +157,25 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         Girador2.Rotate(0f, -speedGirador2 * Time.deltaTime, 0f, Space.Self);
         Torus1Nivell1.Rotate(0f, 0f, -speedTorus1Nivell1 * Time.deltaTime, Space.Self);
         Torus2Nivell1.Rotate(0f,0f, speedTorus2Nivell1 * Time.deltaTime, Space.Self);
+
+
+        //Nivell 3
+        float angle = MaxAngleDeflectionPendulum1 * Mathf.Sin(Time.time * SpeedPendulum1);
+        pendulum1.localRotation = Quaternion.Euler(0, 0, angle);
+        angle = MaxAngleDeflectionPendulum2 * Mathf.Sin(Time.time * SpeedPendulum2);
+        pendulum2.localRotation = Quaternion.Euler(0, 0, angle);
+        angle = -MaxAngleDeflectionPendulum3 * Mathf.Sin(Time.time * SpeedPendulum3);
+        pendulum3.localRotation = Quaternion.Euler(0, 0, angle);
+        angle = MaxAngleDeflectionPendulum4 * Mathf.Sin(Time.time * SpeedPendulum4);
+        pendulum4.localRotation = Quaternion.Euler(0, 0, angle);
+        angle = -MaxAngleDeflectionPendulum5 * Mathf.Sin(Time.time * SpeedPendulum5);
+        pendulum5.localRotation = Quaternion.Euler(0, 0, angle);
+        angle = MaxAngleDeflectionPendulum6 * Mathf.Sin(Time.time * SpeedPendulum6);
+        pendulum6.localRotation = Quaternion.Euler(0, 0, angle);
+        angle = -MaxAngleDeflectionPendulum7 * Mathf.Sin(Time.time * SpeedPendulum7);
+        pendulum7.localRotation = Quaternion.Euler(0, 0, angle);
+        aspa1.Rotate(-speedaspa1 * Time.deltaTime, 0f, 0f, Space.Self);
+        aspa2.Rotate(speedaspa2 * Time.deltaTime, 0f, 0f, Space.Self);
     }
 
     private IEnumerator MouGrupPunxes1()
