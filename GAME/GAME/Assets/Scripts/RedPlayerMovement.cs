@@ -30,7 +30,8 @@ public class RedPlayerMovement : MonoBehaviour
     public float forceGirador2;
 
     //Nivell 1
-    public float forceTorusNivell1; 
+    public float forceTorusNivell1;
+    public float forced; 
 
 
 
@@ -86,15 +87,15 @@ public class RedPlayerMovement : MonoBehaviour
             colisionat = true;
             animator.SetBool("isMoving", false);
         }
-        else if (collision.gameObject.name == "Torus1")
+        else if (collision.gameObject.name == "Torus1" || collision.gameObject.name == "Torus2")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceTorusNivell1);
             colisionat = true;
             animator.SetBool("isMoving", false);
         }
-        else if (collision.gameObject.name == "Torus2")
+        else if (collision.gameObject.name == "d2" || collision.gameObject.name == "d1" || collision.gameObject.name == "d3")
         {
-            myRigidbody.AddForce(collision.contacts[0].normal * forceTorusNivell1);
+            myRigidbody.AddForce(collision.contacts[0].normal * forced);
             colisionat = true;
             animator.SetBool("isMoving", false);
         }
@@ -209,7 +210,7 @@ public class RedPlayerMovement : MonoBehaviour
         {
             Vector3 pathPosition = pathCreator1.path.GetPointAtDistance(pathState);
             myTransform.position = new Vector3((float)pathPosition.x, (float)pathPosition.y, (float)pathPosition.z);
-            transform.LookAt(new Vector3(5000f, 0f, 0f));
+            transform.LookAt(new Vector3(5000f, 0f, 0f)); 
         }
         else if (nivell == 2)
         {

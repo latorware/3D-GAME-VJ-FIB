@@ -54,6 +54,21 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public float speedTorus1Nivell1;
     public Transform Torus2Nivell1;
     public float speedTorus2Nivell1;
+    public Transform d1;
+    private float posicioInicialZd1;
+    bool fentEsquerrad1;
+    private float ranged1;
+    public float speedd1; 
+    public Transform d2;
+    private float posicioInicialZd2;
+    bool fentEsquerrad2;
+    private float ranged2; 
+    public float speedd2;
+    public Transform d3;
+    private float posicioInicialZd3;
+    bool fentEsquerrad3;
+    private float ranged3; 
+    public float speedd3;
 
 
 
@@ -61,6 +76,7 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Nivell 2
         posicioInicialYPunxa1 = punxes1.position.y;
         posicioInicialYPunxa2 = punxes2.position.y;
         posicioInicialYPunxa3 = punxes3.position.y;
@@ -83,6 +99,28 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         pujantGrupPunxes3 = false;
         rangeGrupPunxes3 = 7f;
         StartCoroutine(MouGrupPunxes3());
+
+
+
+        //Nivell 1
+        posicioInicialZd1 = d1.localPosition.z;
+        fentEsquerrad1 = true;
+        ranged1 = 10f; 
+        StartCoroutine (Moud1());
+
+        posicioInicialZd2 = d2.localPosition.z;
+        fentEsquerrad2 = true;
+        ranged2 = 10f;
+        StartCoroutine(Moud2());
+
+        posicioInicialZd3 = d3.localPosition.z;
+        fentEsquerrad3 = true;
+        ranged3 = 10f;
+        StartCoroutine(Moud3());
+
+
+
+
     }
 
     // Update is called once per frame
@@ -103,19 +141,11 @@ public class ObstacleManagerLevel2 : MonoBehaviour
             if ((punxes1.position.y > posicioInicialYPunxa1) && (pujantGrupPunxes1))
             {
                 pujantGrupPunxes1 = false;
-                //punxes1.position = new Vector3(punxes1.position.x, posicioInicialYPunxa1, punxes1.position.z);
-                //punxes2.position = new Vector3(punxes2.position.x, posicioInicialYPunxa2, punxes2.position.z);
-                //punxes3.position = new Vector3(punxes3.position.x, posicioInicialYPunxa3, punxes3.position.z);
-                //punxes4.position = new Vector3(punxes4.position.x, posicioInicialYPunxa4, punxes4.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else if ((punxes1.position.y < (posicioInicialYPunxa1 - rangeGrupPunxes1)) && (!pujantGrupPunxes1))
             {
                 pujantGrupPunxes1 = true;
-                //punxes1.position = new Vector3(punxes1.position.x, posicioInicialYPunxa1 - rangeGrupPunxes1, punxes1.position.z);
-                //punxes2.position = new Vector3(punxes2.position.x, posicioInicialYPunxa2 - rangeGrupPunxes1, punxes2.position.z);
-                //punxes3.position = new Vector3(punxes3.position.x, posicioInicialYPunxa3 - rangeGrupPunxes1, punxes3.position.z);
-                //punxes4.position = new Vector3(punxes4.position.x, posicioInicialYPunxa4 - rangeGrupPunxes1, punxes4.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else
@@ -150,21 +180,11 @@ public class ObstacleManagerLevel2 : MonoBehaviour
             if ((punxes8.position.y > posicioInicialYPunxa8) && (pujantGrupPunxes2))
             {
                 pujantGrupPunxes2 = false;
-                //punxes6.position = new Vector3(punxes6.position.x, posicioInicialYPunxa6, punxes6.position.z);
-                //punxes7.position = new Vector3(punxes7.position.x, posicioInicialYPunxa7, punxes7.position.z);
-                //punxes8.position = new Vector3(punxes8.position.x, posicioInicialYPunxa8, punxes8.position.z);
-                //punxes9.position = new Vector3(punxes9.position.x, posicioInicialYPunxa9, punxes9.position.z);
-                //punxes10.position = new Vector3(punxes10.position.x, posicioInicialYPunxa10, punxes10.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else if ((punxes8.position.y < (posicioInicialYPunxa8 - rangeGrupPunxes2)) && (!pujantGrupPunxes2))
             {
                 pujantGrupPunxes2 = true;
-                //punxes6.position = new Vector3(punxes6.position.x, posicioInicialYPunxa6 - rangeGrupPunxes2, punxes6.position.z);
-                //punxes7.position = new Vector3(punxes7.position.x, posicioInicialYPunxa7 - rangeGrupPunxes2, punxes7.position.z);
-                //punxes8.position = new Vector3(punxes8.position.x, posicioInicialYPunxa8 - rangeGrupPunxes2, punxes8.position.z);
-                //punxes9.position = new Vector3(punxes9.position.x, posicioInicialYPunxa9 - rangeGrupPunxes2, punxes9.position.z);
-                //punxes10.position = new Vector3(punxes10.position.x, posicioInicialYPunxa10 - rangeGrupPunxes2, punxes10.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else
@@ -201,13 +221,11 @@ public class ObstacleManagerLevel2 : MonoBehaviour
             if ((punxes11.position.y > posicioInicialYPunxa11) && (pujantGrupPunxes3))
             {
                 pujantGrupPunxes3 = false;
-                //punxes11.position = new Vector3(punxes11.position.x, posicioInicialYPunxa11, punxes11.position.z);
                 yield return new WaitForSeconds(0.5f);
             }
             else if ((punxes11.position.y < (posicioInicialYPunxa11 - rangeGrupPunxes3)) && (!pujantGrupPunxes3))
             {
                 pujantGrupPunxes3 = true;
-                //punxes11.position = new Vector3(punxes11.position.x, posicioInicialYPunxa11 - rangeGrupPunxes3, punxes11.position.z);
                 yield return new WaitForSeconds(1f);
             }
             else
@@ -219,6 +237,105 @@ public class ObstacleManagerLevel2 : MonoBehaviour
                 else
                 {
                     punxes11.Translate(new Vector3(0f, -speedGrupPunxes3Baixada * Time.deltaTime, 0f), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+
+    private IEnumerator Moud1()
+    {
+        while (true)
+        {
+
+
+            if ((d1.localPosition.z > posicioInicialZd1) && (!fentEsquerrad1))
+            {
+                fentEsquerrad1 = true; 
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((d1.localPosition.z < (posicioInicialZd1 - ranged1)) && (fentEsquerrad1))
+            {
+                fentEsquerrad1 = false; 
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentEsquerrad1)
+                {
+                    d1.Translate(new Vector3(0f, 0f, -speedd1 * Time.deltaTime), Space.Self);
+                }
+                else
+                {
+                    d1.Translate(new Vector3(0f, 0f, +speedd1 * Time.deltaTime), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+
+    private IEnumerator Moud2()
+    {
+        while (true)
+        {
+
+
+            if ((d2.localPosition.z > posicioInicialZd2) && (!fentEsquerrad2))
+            {
+                fentEsquerrad2 = true;
+                yield return new WaitForSeconds(0f);
+            }
+            else if ((d2.localPosition.z < (posicioInicialZd2 - ranged2)) && (fentEsquerrad2))
+            {
+                fentEsquerrad2 = false;
+                yield return new WaitForSeconds(0f);
+            }
+            else
+            {
+                if (fentEsquerrad2)
+                {
+                    d2.Translate(new Vector3(0f, 0f, -speedd2 * Time.deltaTime), Space.Self);
+                }
+                else
+                {
+                    d2.Translate(new Vector3(0f, 0f, +speedd2 * Time.deltaTime), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+
+    private IEnumerator Moud3()
+    {
+        while (true)
+        {
+
+
+            if ((d3.localPosition.z > posicioInicialZd3) && (!fentEsquerrad3))
+            {
+                fentEsquerrad3 = true;
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((d3.localPosition.z < (posicioInicialZd3 - ranged3)) && (fentEsquerrad3))
+            {
+                fentEsquerrad3 = false;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentEsquerrad3)
+                {
+                    d3.Translate(new Vector3(0f, 0f, -speedd3 * Time.deltaTime), Space.Self);
+                }
+                else
+                {
+                    d3.Translate(new Vector3(0f, 0f, +speedd3 * Time.deltaTime), Space.Self);
                 }
             }
             yield return new WaitForSeconds(0f);
