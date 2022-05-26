@@ -86,4 +86,14 @@ public class GlobalVolumeManager : MonoBehaviour
 
         yield return null;
     }
+
+    public void BlancINegre()
+    {
+        ColorAdjustment.saturation.value = -100f;
+    }
+
+    public void Color()
+    {
+        ColorAdjustment.saturation.value = 25f;
+    }
 }

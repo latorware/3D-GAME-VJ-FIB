@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ObstacleManagerLevel2 : MonoBehaviour
 {
+    public GlobalVolumeManager volumeManager;
+
+
     //Nivell 2
     public Transform punxes1;
     public Transform punxes2;
@@ -140,6 +143,85 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public float speedmartell7;
     public Transform martell8;
     public float speedmartell8;
+    public Transform Torus3;
+    public float speedTorus3;
+    public Transform aspa3;
+    public float speedaspa3;
+    public Transform aspa4;
+    public float speedaspa4;
+    public Transform Boxa1; 
+    public float speedboxa1;
+    public Transform Boxa2;
+    public float speedboxa2;
+    public Transform Boxa3;
+    public float speedboxa3;
+    public Transform Boxa4;
+    public float speedboxa4;
+
+
+    //Invulnerabilitat
+    bool invulnerable;
+    public MeshCollider Torus1Collider;
+    public MeshCollider Torus2Collider;
+    public CapsuleCollider punxes1Colider; 
+    public CapsuleCollider punxes2Colider;
+    public CapsuleCollider punxes3Colider;
+    public CapsuleCollider punxes4Colider;
+    public BoxCollider punxes8Colider;
+    public BoxCollider punxes11Colider;
+    public CapsuleCollider cGran1Colider;
+    public CapsuleCollider cGran2Colider;
+    public BoxCollider d2Colider;
+    public BoxCollider d1Colider;
+    public BoxCollider d3Colider;
+    public SphereCollider f11Colider;
+    public SphereCollider f22Colider;
+    public SphereCollider f33Colider;
+    public SphereCollider f44Colider;
+    public SphereCollider f55Colider;
+    public SphereCollider f66Colider;
+    public SphereCollider f77Colider;
+    public BoxCollider pal2aspa1Colider;
+    public BoxCollider pal1aspa1Colider;
+    public BoxCollider pal1aspa2Colider;
+    public BoxCollider pal2aspa2Colider;
+    public BoxCollider porta11Colider;
+    public BoxCollider porta12Colider;
+    public BoxCollider porta21Colider;
+    public BoxCollider porta22Colider;
+    public BoxCollider porta31Colider;
+    public BoxCollider porta32Colider;
+    public BoxCollider porta41Colider;
+    public BoxCollider porta42Colider;
+    public MeshCollider Roda1Objecte1Colider;
+    public MeshCollider Roda1Objecte2Colider;
+    public MeshCollider Roda1Objecte3Colider;
+    public MeshCollider Roda1Objecte4Colider;
+    public MeshCollider Roda4Objecte1Colider;
+    public MeshCollider Roda4Objecte2Colider;
+    public MeshCollider Roda4Objecte3Colider;
+    public MeshCollider Roda4Objecte4Colider;
+    public BoxCollider d8Colider;
+    public CapsuleCollider cGran3Collider;
+    public BoxCollider picMartell1Colider;
+    public BoxCollider picMartell2Colider;
+    public BoxCollider picMartell3Colider;
+    public BoxCollider picMartell4Colider;
+    public BoxCollider picMartell5Colider;
+    public BoxCollider picMartell6Colider;
+    public BoxCollider picMartell7Colider;
+    public BoxCollider picMartell8Colider;
+    public BoxCollider pal2aspa3Colider;
+    public BoxCollider pal1aspa3Colider;
+    public BoxCollider pal2aspa4Colider;
+    public BoxCollider pal1aspa4Colider;
+    public MeshCollider Torus3Colider;
+    public BoxCollider picoBoxa1Colider;
+    public BoxCollider picoBoxa2Colider;
+    public BoxCollider picoBoxa3Colider;
+    public BoxCollider picoBoxa4Colider;
+
+
 
 
 
@@ -147,6 +229,7 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        invulnerable = false; 
         //Nivell 2
         posicioInicialYPunxa1 = punxes1.position.y;
         posicioInicialYPunxa2 = punxes2.position.y;
@@ -209,6 +292,10 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         StartCoroutine(MouMartell6());
         StartCoroutine(MouMartell7());
         StartCoroutine(MouMartell8());
+        StartCoroutine(MouBoxa4());
+        StartCoroutine(MouBoxa2());
+        StartCoroutine(MouBoxa3());
+        StartCoroutine(MouBoxa1());
 
     }
 
@@ -239,6 +326,14 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         aspa1.Rotate(-speedaspa1 * Time.deltaTime, 0f, 0f, Space.Self);
         aspa2.Rotate(speedaspa2 * Time.deltaTime, 0f, 0f, Space.Self);
 
+
+        //Nivell 4
+        Torus3.Rotate(0f, 0f, -speedTorus3 * Time.deltaTime, Space.Self);
+        aspa3.Rotate(-speedaspa3 * Time.deltaTime, 0f, 0f, Space.Self);
+        aspa4.Rotate(-speedaspa4 * Time.deltaTime, 0f, 0f, Space.Self);
+
+
+
         //Nivell 5
         porta11.Rotate(0f, -speedPorta1 * Time.deltaTime, 0f, Space.Self);
         porta12.Rotate(0f, speedPorta1 * Time.deltaTime, 0f, Space.Self);
@@ -249,6 +344,25 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         Roda1.Rotate(0f, 0f, -speedRoda1 * Time.deltaTime, Space.Self);
         Girador3.Rotate(0f, speedGirador3 * Time.deltaTime, 0f, Space.Self);
 
+
+
+
+        //Lo de la invulnerabilitat
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if (!invulnerable)
+            {
+                invulnerable = true;
+                volumeManager.BlancINegre();
+                treuColiders(); 
+            }
+            else
+            {
+                invulnerable = false;
+                volumeManager.Color();
+                posaColiders(); 
+            }
+        }
 
 
     }
@@ -887,6 +1001,265 @@ public class ObstacleManagerLevel2 : MonoBehaviour
             }
         }
 
+    }
+
+    private IEnumerator MouBoxa4()
+    {
+        bool fentFora = false;
+        float posicioInicialBoxa4X = Boxa4.localPosition.x;
+        float range = 4f;
+        while (true)
+        {
+
+            if ((Boxa4.localPosition.x > (posicioInicialBoxa4X + range)) && (fentFora))
+            {
+                fentFora = false;
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((Boxa4.localPosition.x < (posicioInicialBoxa4X)) && (!fentFora))
+            {
+                fentFora = true;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentFora)
+                {
+                    Boxa4.Translate(new Vector3(speedboxa4 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+                else
+                {
+                    Boxa4.Translate(new Vector3(-speedboxa4 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+    private IEnumerator MouBoxa3()
+    {
+        bool fentFora = false;
+        float posicioInicialBoxa3X = Boxa3.localPosition.x;
+        float range = 4f;
+        while (true)
+        {
+
+            if ((Boxa3.localPosition.x > (posicioInicialBoxa3X + range)) && (fentFora))
+            {
+                fentFora = false;
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((Boxa3.localPosition.x < (posicioInicialBoxa3X)) && (!fentFora))
+            {
+                fentFora = true;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentFora)
+                {
+                    Boxa3.Translate(new Vector3(speedboxa3 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+                else
+                {
+                    Boxa3.Translate(new Vector3(-speedboxa3 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+    private IEnumerator MouBoxa2()
+    {
+        bool fentFora = true;
+        float range = 4f;
+        float posicioInicialBoxa2X = Boxa2.localPosition.x + range;
+        while (true)
+        {
+            if ((Boxa2.localPosition.x < (posicioInicialBoxa2X - range)) && (fentFora))
+            {
+                fentFora = false;
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((Boxa2.localPosition.x > (posicioInicialBoxa2X)) && (!fentFora))
+            {
+                fentFora = true;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentFora)
+                {
+                    Boxa2.Translate(new Vector3(speedboxa2 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+                else
+                {
+                    Boxa2.Translate(new Vector3(-speedboxa2 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+    private IEnumerator MouBoxa1()
+    {
+        bool fentFora = true;
+        float range = 4f;
+        float posicioInicialBoxa1X = Boxa1.localPosition.x + range;
+        while (true)
+        {
+            if ((Boxa1.localPosition.x < (posicioInicialBoxa1X - range)) && (fentFora))
+            {
+                fentFora = false;
+                yield return new WaitForSeconds(1f);
+            }
+            else if ((Boxa1.localPosition.x > (posicioInicialBoxa1X)) && (!fentFora))
+            {
+                fentFora = true;
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                if (fentFora)
+                {
+                    Boxa1.Translate(new Vector3(speedboxa1 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+                else
+                {
+                    Boxa1.Translate(new Vector3(-speedboxa1 * Time.deltaTime, 0f, 0f), Space.Self);
+                }
+            }
+            yield return new WaitForSeconds(0f);
+        }
+
+    }
+
+
+    private void treuColiders()
+    {
+        Torus1Collider.enabled = false; 
+        Torus2Collider.enabled = false; 
+        punxes1Colider.enabled = false; 
+        punxes2Colider.enabled = false; 
+        punxes3Colider.enabled = false; 
+        punxes4Colider.enabled = false; 
+        punxes8Colider.enabled = false; 
+        punxes11Colider.enabled = false; 
+        cGran1Colider.enabled = false; 
+        cGran2Colider.enabled = false; 
+        d2Colider.enabled = false;
+        d1Colider.enabled = false; 
+        d3Colider.enabled = false; 
+        f11Colider.enabled = false; 
+        f22Colider.enabled = false; 
+        f33Colider.enabled = false; 
+        f44Colider.enabled = false; 
+        f55Colider.enabled = false; 
+        f66Colider.enabled = false;
+        f77Colider.enabled = false; 
+        pal2aspa1Colider.enabled = false;
+        pal1aspa1Colider.enabled = false; 
+        pal1aspa2Colider.enabled = false; 
+        pal2aspa2Colider.enabled = false; 
+        porta11Colider.enabled = false; 
+        porta12Colider.enabled = false; 
+        porta21Colider.enabled = false; 
+        porta22Colider.enabled = false; 
+        porta31Colider.enabled = false; 
+        porta32Colider.enabled = false; 
+        porta41Colider.enabled = false; 
+        porta42Colider.enabled = false; 
+        Roda1Objecte1Colider.enabled = false; 
+        Roda1Objecte2Colider.enabled = false; 
+        Roda1Objecte3Colider.enabled = false; 
+        Roda1Objecte4Colider.enabled = false; 
+        Roda4Objecte1Colider.enabled = false; 
+        Roda4Objecte2Colider.enabled = false; 
+        Roda4Objecte3Colider.enabled = false; 
+        Roda4Objecte4Colider.enabled = false;
+        d8Colider.enabled = false; 
+        cGran3Collider.enabled = false; 
+        picMartell1Colider.enabled = false; 
+        picMartell2Colider.enabled = false; 
+        picMartell3Colider.enabled = false; 
+        picMartell5Colider.enabled = false; 
+        picMartell6Colider.enabled = false; 
+        picMartell7Colider.enabled = false; 
+        picMartell8Colider.enabled = false; 
+        pal2aspa3Colider.enabled = false; 
+        pal1aspa3Colider.enabled = false; 
+        pal2aspa4Colider.enabled = false; 
+        pal1aspa4Colider.enabled = false; 
+        Torus3Colider.enabled = false; 
+        picoBoxa1Colider.enabled = false; 
+        picoBoxa2Colider.enabled = false; 
+        picoBoxa3Colider.enabled = false; 
+        picoBoxa4Colider.enabled = false; 
+    }
+
+    private void posaColiders()
+    {
+        Torus1Collider.enabled = true; 
+        Torus2Collider.enabled = true; 
+        punxes1Colider.enabled = true; 
+        punxes2Colider.enabled = true; 
+        punxes3Colider.enabled = true; 
+        punxes4Colider.enabled = true; 
+        punxes8Colider.enabled = true; 
+        punxes11Colider.enabled = true; 
+        cGran1Colider.enabled = true; 
+        cGran2Colider.enabled = true; 
+        d2Colider.enabled = true;
+        d1Colider.enabled = true; 
+        d3Colider.enabled = true; 
+        f11Colider.enabled = true; 
+        f22Colider.enabled = true; 
+        f33Colider.enabled = true; 
+        f44Colider.enabled = true; 
+        f55Colider.enabled = true; 
+        f66Colider.enabled = true;
+        f77Colider.enabled = true; 
+        pal2aspa1Colider.enabled = true;
+        pal1aspa1Colider.enabled = true; 
+        pal1aspa2Colider.enabled = true; 
+        pal2aspa2Colider.enabled = true; 
+        porta11Colider.enabled = true; 
+        porta12Colider.enabled = true; 
+        porta21Colider.enabled = true; 
+        porta22Colider.enabled = true; 
+        porta31Colider.enabled = true; 
+        porta32Colider.enabled = true; 
+        porta41Colider.enabled = true; 
+        porta42Colider.enabled = true; 
+        Roda1Objecte1Colider.enabled = true; 
+        Roda1Objecte2Colider.enabled = true; 
+        Roda1Objecte3Colider.enabled = true; 
+        Roda1Objecte4Colider.enabled = true; 
+        Roda4Objecte1Colider.enabled = true; 
+        Roda4Objecte2Colider.enabled = true; 
+        Roda4Objecte3Colider.enabled = true; 
+        Roda4Objecte4Colider.enabled = true;
+        d8Colider.enabled = true; 
+        cGran3Collider.enabled = true; 
+        picMartell1Colider.enabled = true; 
+        picMartell2Colider.enabled = true; 
+        picMartell3Colider.enabled = true; 
+        picMartell5Colider.enabled = true; 
+        picMartell6Colider.enabled = true; 
+        picMartell7Colider.enabled = true; 
+        picMartell8Colider.enabled = true; 
+        pal2aspa3Colider.enabled = true; 
+        pal1aspa3Colider.enabled = true; 
+        pal2aspa4Colider.enabled = true; 
+        pal1aspa4Colider.enabled = true; 
+        Torus3Colider.enabled = true; 
+        picoBoxa1Colider.enabled = true; 
+        picoBoxa2Colider.enabled = true; 
+        picoBoxa3Colider.enabled = true; 
+        picoBoxa4Colider.enabled = true; 
     }
 
 }
