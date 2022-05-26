@@ -41,7 +41,10 @@ public class RedPlayerMovement : MonoBehaviour
 
     //Nivell 5
     public float forcePorta;
-    public float forceRoda; 
+    public float forceRoda;
+
+    //Nivell 4
+    public float forceMartell; 
 
 
     [HideInInspector]
@@ -141,6 +144,12 @@ public class RedPlayerMovement : MonoBehaviour
         else if (collision.gameObject.name == "cGran3")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceGirador1);
+            colisionat = true;
+            animator.SetBool("isMoving", false);
+        }
+        else if (collision.gameObject.name == "picMartell1" || collision.gameObject.name == "picMartell2" || collision.gameObject.name == "picMartell3" || collision.gameObject.name == "picMartell4" || collision.gameObject.name == "picMartell5" || collision.gameObject.name == "picMartell6" || collision.gameObject.name == "picMartell7" || collision.gameObject.name == "picMartell8")
+        {
+            myRigidbody.AddForce(collision.contacts[0].normal * forceMartell);
             colisionat = true;
             animator.SetBool("isMoving", false);
         }

@@ -123,6 +123,24 @@ public class ObstacleManagerLevel2 : MonoBehaviour
     public Transform Girador3;
     public float speedGirador3;
 
+    //Nivell 4
+    public Transform martell1;
+    public float speedmartell1;
+    public Transform martell2;
+    public float speedmartell2;
+    public Transform martell3;
+    public float speedmartell3;
+    public Transform martell4;
+    public float speedmartell4;
+    public Transform martell5;
+    public float speedmartell5;
+    public Transform martell6;
+    public float speedmartell6;
+    public Transform martell7;
+    public float speedmartell7;
+    public Transform martell8;
+    public float speedmartell8;
+
 
 
 
@@ -181,6 +199,16 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         fentEsquerrad8 = true;
         ranged8 = 10f;
         StartCoroutine(Moud8());
+
+        //Nivell 4
+        StartCoroutine(MouMartell1());
+        StartCoroutine(MouMartell2());
+        StartCoroutine(MouMartell3());
+        StartCoroutine(MouMartell4());
+        StartCoroutine(MouMartell5());
+        StartCoroutine(MouMartell6());
+        StartCoroutine(MouMartell7());
+        StartCoroutine(MouMartell8());
 
     }
 
@@ -538,4 +566,327 @@ public class ObstacleManagerLevel2 : MonoBehaviour
         }
 
     }
+
+
+
+    private IEnumerator MouMartell1()
+    {
+        float angle = 0f;
+        bool fentdalt = true; 
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell1 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(1f);
+                }
+                else
+                {
+                    martell1.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null; 
+                }
+            }
+            else
+            {
+                angle += speedmartell1 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(1f);
+                }
+                else
+                {
+                    martell1.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null; 
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell2()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell2 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(1f);
+                }
+                else
+                {
+                    martell2.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell2 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(1f);
+                }
+                else
+                {
+                    martell2.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell3()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell3 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    martell3.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell3 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    martell3.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell4()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell4 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    martell4.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell4 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    martell4.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell5()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell5 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(0f);
+                }
+                else
+                {
+                    martell5.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell5 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(0f);
+                }
+                else
+                {
+                    martell5.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell6()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell6 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    martell6.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell6 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    martell6.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell7()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell7 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(0f);
+                }
+                else
+                {
+                    martell7.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell7 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(0f);
+                }
+                else
+                {
+                    martell7.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
+    private IEnumerator MouMartell8()
+    {
+        float angle = 0f;
+        bool fentdalt = true;
+        while (true)
+        {
+
+            if (fentdalt)
+            {
+                angle += -speedmartell8 * Time.deltaTime;
+                if (angle < -90f)
+                {
+                    fentdalt = false;
+                    yield return new WaitForSeconds(0f);
+                }
+                else
+                {
+                    martell8.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+            else
+            {
+                angle += speedmartell8 * Time.deltaTime;
+
+                if (angle > 0f)
+                {
+                    fentdalt = true;
+                    yield return new WaitForSeconds(0f);
+                }
+                else
+                {
+                    martell8.localRotation = Quaternion.Euler(0, 0, angle);
+                    yield return null;
+                }
+            }
+        }
+
+    }
+
 }
