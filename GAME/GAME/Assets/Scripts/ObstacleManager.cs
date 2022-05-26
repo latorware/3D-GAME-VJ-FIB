@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleManagerLevel2 : MonoBehaviour
+public class ObstacleManager : MonoBehaviour
 {
     public GlobalVolumeManager volumeManager;
 
