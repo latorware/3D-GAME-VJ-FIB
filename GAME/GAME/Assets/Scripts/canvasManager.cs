@@ -5,21 +5,53 @@ using UnityEngine;
 public class canvasManager : MonoBehaviour
 {
 
-
+    public GlobalVolumeManager volumeManager;
     public CanvasGroup BlackRedCanvasGroup;
     public CanvasGroup BlackBlueCanvasGroup;
+    public CanvasGroup LevelText1;
+    public CanvasGroup LevelText2;
+    public CanvasGroup LevelText3;
+    public CanvasGroup LevelText4;
+    public CanvasGroup LevelText5;
+    public CanvasGroup Pause; 
+    bool enMenu;
+    bool enPausa;
+    bool enCredits;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        enMenu = false; 
+        enPausa = false;
+        enCredits = false;
+        LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f; BlackBlueCanvasGroup.alpha = 0f; BlackRedCanvasGroup.alpha = 0f; Pause.alpha = 0f;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (!enMenu && !enCredits)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (!enPausa)
+                {
+                    enPausa = true;
+                    Time.timeScale = 0;
+                    volumeManager.setBlur();
+                    Pause.alpha = 1.0f;
+                }
+                else
+                {
+                    enPausa = false;
+                    Time.timeScale = 1;
+                    volumeManager.clearBlur();
+                    Pause.alpha = 0f;
+                }
+            }
+        }
     }
 
 
@@ -83,6 +115,36 @@ public class canvasManager : MonoBehaviour
         }
 
         yield return null;
+    }
+
+    public void activaCanviaLevelText(int level)
+    {
+        LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f;
+
+        if (!enMenu && !enPausa && !enCredits)
+        {
+            if (level == 1)
+            {
+                LevelText1.alpha = 1f;
+            }
+            else if (level == 2)
+            {
+                LevelText2.alpha = 1f;
+            }
+            else if (level == 3)
+            {
+                LevelText3.alpha = 1f;
+            }
+            else if (level == 4)
+            {
+                LevelText4.alpha = 1f;
+            }
+            else if (level == 5)
+            {
+                LevelText5.alpha = 1f;
+            }
+
+        }
     }
 
 }

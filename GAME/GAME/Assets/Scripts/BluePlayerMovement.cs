@@ -16,6 +16,7 @@ public class BluePlayerMovement : MonoBehaviour
     public GlobalVolumeManager volumeManager;
     public canvasManager canvasManager;
 
+    public RedPlayerMovement RedPlayer; 
 
     public PathCreator pathCreator1;
     public PathCreator pathCreator2;
@@ -57,7 +58,8 @@ public class BluePlayerMovement : MonoBehaviour
     bool colisionat;
     bool fentRestart;
     bool canviantNivell;
-    bool guanyatBlue; 
+    bool guanyatBlue;
+    bool perdutBlue; 
 
 
     // Start is called before the first frame update
@@ -69,6 +71,7 @@ public class BluePlayerMovement : MonoBehaviour
         myRigidbody.sleepThreshold = 0.0f;
         canviantNivell = false;
         guanyatBlue = false;
+        perdutBlue = false;
         animator.SetBool("isFalling", false);
         animator.SetBool("BlueCry", false);
         animator.SetBool("Climb", false);
@@ -190,7 +193,7 @@ public class BluePlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (!canviantNivell && !guanyatBlue)
+        if (!canviantNivell && !guanyatBlue && !perdutBlue)
         {
             if ((Input.GetKey(KeyCode.Alpha1)) && (currentNivell != 1))
             {
@@ -448,16 +451,19 @@ public class BluePlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         myRigidbody.velocity = Vector3.zero;
         animator.SetBool("BlueWin", false);
+        animator.SetBool("BlueCry", false);
         ComensaNivell(nivell);
         yield return new WaitForSeconds(1f);
         canviantNivell = false;
-        guanyatBlue = false; 
+        guanyatBlue = false;
+        perdutBlue = false;
         yield return null;
     }
 
     
     private IEnumerator guanyat()
     {
+        StartCoroutine(RedPlayer.perdut()); 
         guanyatBlue = true;
         canviantNivell = true;
         animator.SetBool("BlueWin", true);
@@ -467,12 +473,33 @@ public class BluePlayerMovement : MonoBehaviour
             StartCoroutine(canviaNivell(currentNivell+1));
         }
         else
-        { 
+        {
             //Credits
+            yield return null; 
         }
 
 
     }
-    
+
+
+    public IEnumerator perdut()
+    {
+        perdutBlue = true;
+        canviantNivell = true;
+        animator.SetBool("BlueCry", true);
+        if (currentNivell != 5)
+        {
+            yield return new WaitForSeconds(3f);
+            StartCoroutine(canviaNivell(currentNivell + 1));
+        }
+        else
+        {
+            //Credits
+            yield return null; 
+        }
+
+
+    }
+
 
 }

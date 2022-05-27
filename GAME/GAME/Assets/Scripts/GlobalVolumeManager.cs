@@ -8,6 +8,7 @@ public class GlobalVolumeManager : MonoBehaviour
 {
 
     private ColorAdjustments ColorAdjustment;
+    private DepthOfField depthOfField; 
 
 
 
@@ -17,6 +18,7 @@ public class GlobalVolumeManager : MonoBehaviour
         Volume volume = GetComponent<Volume>();
 
         volume.sharedProfile.TryGet<ColorAdjustments>(out ColorAdjustment);
+        volume.sharedProfile.TryGet<DepthOfField>(out depthOfField);
 
         ColorAdjustment.postExposure.value = 0f;
     }
@@ -96,5 +98,15 @@ public class GlobalVolumeManager : MonoBehaviour
     public void Color()
     {
         ColorAdjustment.saturation.value = 25f;
+    }
+
+    public void setBlur()
+    {
+        depthOfField.active = true; 
+    }
+
+    public void clearBlur()
+    {
+        depthOfField.active = false; 
     }
 }

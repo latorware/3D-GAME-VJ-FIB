@@ -10,12 +10,12 @@ public class RedPlayerMovement : MonoBehaviour
     private Animator animator;
     private Rigidbody myRigidbody;
     public float FallingThreshold = -10f;
-    private int currentNivell;
     private Transform myTransform;
 
     public GlobalVolumeManager volumeManager;
     public canvasManager canvasManager;
 
+    public BluePlayerMovement bluePlayer; 
 
     public PathCreator pathCreator1;
     public PathCreator pathCreator2;
@@ -52,12 +52,14 @@ public class RedPlayerMovement : MonoBehaviour
 
 
     [HideInInspector]
+    public int currentNivell;
     private bool Falling; 
     float pathState;
     bool colisionat;
     bool fentRestart;
     bool canviantNivell;
-    bool guanyatRed; 
+    bool guanyatRed;
+    bool perdutRed; 
 
 
     // Start is called before the first frame update
@@ -69,6 +71,7 @@ public class RedPlayerMovement : MonoBehaviour
         myRigidbody.sleepThreshold = 0.0f;
         canviantNivell = false;
         guanyatRed = false;
+        perdutRed = false; 
         animator.SetBool("isFalling", false);
         animator.SetBool("RedCry", false);
         animator.SetBool("Climb", false);
@@ -190,7 +193,7 @@ public class RedPlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (!canviantNivell && !guanyatRed)
+        if (!canviantNivell && !guanyatRed && !perdutRed)
         {
             if ((Input.GetKey(KeyCode.Alpha1)) && (currentNivell != 1))
             {
@@ -296,6 +299,7 @@ public class RedPlayerMovement : MonoBehaviour
         Falling = false;
         colisionat = false;
         currentNivell = nivell;
+        canvasManager.activaCanviaLevelText(currentNivell); 
         //posicio i mirar en principi nivell
         pathState = 0f;
         if (nivell == 1)
@@ -448,16 +452,19 @@ public class RedPlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         myRigidbody.velocity = Vector3.zero;
         animator.SetBool("RedWin", false);
+        animator.SetBool("RedCry", false);
         ComensaNivell(nivell);
         yield return new WaitForSeconds(1f);
         canviantNivell = false;
         guanyatRed = false; 
+        perdutRed = false;
         yield return null;
     }
 
     
     private IEnumerator guanyat()
     {
+        StartCoroutine(bluePlayer.perdut()); 
         guanyatRed = true;
         canviantNivell = true;
         animator.SetBool("RedWin", true);
@@ -473,6 +480,25 @@ public class RedPlayerMovement : MonoBehaviour
 
 
     }
-    
+
+
+    public IEnumerator perdut()
+    {
+        perdutRed = true;
+        canviantNivell = true;
+        animator.SetBool("RedCry", true);
+        if (currentNivell != 5)
+        {
+            yield return new WaitForSeconds(3f);
+            StartCoroutine(canviaNivell(currentNivell + 1));
+        }
+        else
+        {
+            //Credits
+        }
+
+
+    }
+
 
 }
