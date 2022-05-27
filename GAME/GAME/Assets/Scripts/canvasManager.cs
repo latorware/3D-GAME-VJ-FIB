@@ -6,6 +6,8 @@ public class canvasManager : MonoBehaviour
 {
 
     public GlobalVolumeManager volumeManager;
+    public Camera cameraMenu;
+    public Camera CreditsCamera;
     public CanvasGroup BlackRedCanvasGroup;
     public CanvasGroup BlackBlueCanvasGroup;
     public CanvasGroup LevelText1;
@@ -13,7 +15,11 @@ public class canvasManager : MonoBehaviour
     public CanvasGroup LevelText3;
     public CanvasGroup LevelText4;
     public CanvasGroup LevelText5;
-    public CanvasGroup Pause; 
+    public Canvas Pause;
+    public Canvas Credits;
+    public Canvas Menu;
+    public RedPlayerMovement redplayer;
+    public BluePlayerMovement blueplayer; 
     bool enMenu;
     bool enPausa;
     bool enCredits;
@@ -22,10 +28,17 @@ public class canvasManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enMenu = false; 
+        enMenu = true;
+        CreditsCamera.enabled = false;
         enPausa = false;
         enCredits = false;
-        LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f; BlackBlueCanvasGroup.alpha = 0f; BlackRedCanvasGroup.alpha = 0f; Pause.alpha = 0f;
+        LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f; BlackBlueCanvasGroup.alpha = 0f; BlackRedCanvasGroup.alpha = 0f; Pause.enabled = false; Credits.enabled = false; 
+        Menu.enabled = true;
+        Time.timeScale = 1;
+        volumeManager.clearBlur();
+        //redplayer.ComensaPrincipi();
+        //blueplayer.ComensaPrincipi();
+        cameraMenu.enabled = true;
         //volumeManager.clearBlur();
     }
 
@@ -41,14 +54,14 @@ public class canvasManager : MonoBehaviour
                     enPausa = true;
                     Time.timeScale = 0;
                     volumeManager.setBlur();
-                    Pause.alpha = 1.0f;
+                    Pause.enabled = true; 
                 }
                 else
                 {
                     enPausa = false;
                     Time.timeScale = 1;
                     volumeManager.clearBlur();
-                    Pause.alpha = 0f;
+                    Pause.enabled = false; 
                 }
             }
         }
@@ -152,7 +165,57 @@ public class canvasManager : MonoBehaviour
         enPausa = false;
         Time.timeScale = 1;
         volumeManager.clearBlur();
-        Pause.alpha = 0f;
+        Pause.enabled = false;
     }
+
+    public void MenuPausa()
+    {
+        Time.timeScale = 1;
+        enPausa = false;
+        volumeManager.clearBlur();
+        redplayer.ComensaPrincipi(); 
+        blueplayer.ComensaPrincipi();
+        Pause.enabled = false;
+        Menu.enabled = true;
+        cameraMenu.enabled = true;
+
+    }
+
+    public void PlayMenu()
+    {
+        volumeManager.clearBlur();
+        enMenu = false;
+        Menu.enabled = false; 
+        cameraMenu.enabled = false;
+        redplayer.ComensaPrincipi();
+        blueplayer.ComensaPrincipi();
+    }
+
+    public void ExitMenu()
+    {
+        Application.Quit(); 
+    }
+
+    public void CreditsMenu()
+    {
+        volumeManager.setBlur();
+        enMenu = false;
+        enCredits = true;
+        Menu.enabled = false;
+        cameraMenu.enabled = false;
+        Credits.enabled = true;
+        CreditsCamera.enabled = true; 
+    }
+
+    public void ExitCredits()
+    {
+        volumeManager.clearBlur();
+        enMenu = true;
+        enCredits = false; 
+        Menu.enabled=true;
+        cameraMenu.enabled = true;
+        Credits.enabled = false;
+        CreditsCamera.enabled = false; 
+    }    
 
 }

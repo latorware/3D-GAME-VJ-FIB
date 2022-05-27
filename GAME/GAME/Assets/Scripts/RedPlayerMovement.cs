@@ -501,4 +501,10 @@ public class RedPlayerMovement : MonoBehaviour
     }
 
 
+    public void ComensaPrincipi()
+    {
+        ComensaNivell(1); 
+    }
+
+
 }

@@ -501,5 +501,10 @@ public class BluePlayerMovement : MonoBehaviour
 
     }
 
+    public void ComensaPrincipi()
+    {
+        ComensaNivell(1);
+    }
+
 
 }
