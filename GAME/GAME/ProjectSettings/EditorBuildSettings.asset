@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Joc.unity
+    guid: 0edd63103a44af1469cd172b80d0e3fe
   m_configObjects: {}
