@@ -14,6 +14,7 @@ public class RedPlayerMovement : MonoBehaviour
     private Transform myTransform;
 
     public GlobalVolumeManager volumeManager;
+    public canvasManager canvasManager;
 
 
     public PathCreator pathCreator1;
@@ -429,7 +430,7 @@ public class RedPlayerMovement : MonoBehaviour
     {
         animator.SetBool("Climb", false);
         yield return new WaitForSeconds(2f);
-        StartCoroutine(volumeManager.transitionExposureNegre(2f));
+        StartCoroutine(canvasManager.transitionRedExposureNegre(2f));
         animator.SetBool("isFalling", false);
         yield return new WaitForSeconds(1f);
         myRigidbody.velocity = Vector3.zero;

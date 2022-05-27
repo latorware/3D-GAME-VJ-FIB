@@ -27,7 +27,7 @@ public class GlobalVolumeManager : MonoBehaviour
 
     }
 
-
+    /*
     public IEnumerator transitionExposureNegre(float duration)
     {
         float currentTemps = 0.0f;
@@ -56,6 +56,7 @@ public class GlobalVolumeManager : MonoBehaviour
 
         yield return null; 
     }
+    */
 
 
     public IEnumerator transitionExposureBlanc(float duration)
