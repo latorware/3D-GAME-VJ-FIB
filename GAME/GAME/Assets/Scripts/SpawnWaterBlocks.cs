@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnWaterBlocks : MonoBehaviour
 {
-    
+   
     public GameObject waterBlockPrefab;
 
     private void spawnWaterBlocks()
@@ -21,7 +21,7 @@ public class SpawnWaterBlocks : MonoBehaviour
         }
         
     }
-
+    
 
     // Start is called before the first frame update
     void Start()

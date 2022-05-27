@@ -26,7 +26,7 @@ public class canvasManager : MonoBehaviour
         enPausa = false;
         enCredits = false;
         LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f; BlackBlueCanvasGroup.alpha = 0f; BlackRedCanvasGroup.alpha = 0f; Pause.alpha = 0f;
-
+        //volumeManager.clearBlur();
     }
 
     // Update is called once per frame
@@ -145,6 +145,14 @@ public class canvasManager : MonoBehaviour
             }
 
         }
+    }
+
+    public void continuePausa()
+    {
+        enPausa = false;
+        Time.timeScale = 1;
+        volumeManager.clearBlur();
+        Pause.alpha = 0f;
     }
 
 }
