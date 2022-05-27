@@ -220,6 +220,7 @@ public class ObstacleManager : MonoBehaviour
     public BoxCollider picoBoxa2Colider;
     public BoxCollider picoBoxa3Colider;
     public BoxCollider picoBoxa4Colider;
+    public AudioSource magicTecles; 
 
 
 
@@ -350,6 +351,7 @@ public class ObstacleManager : MonoBehaviour
         //Lo de la invulnerabilitat
         if (Input.GetKeyDown(KeyCode.G))
         {
+            magicTecles.Play(); 
             if (!invulnerable)
             {
                 invulnerable = true;

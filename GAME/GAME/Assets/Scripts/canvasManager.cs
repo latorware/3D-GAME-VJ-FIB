@@ -23,6 +23,9 @@ public class canvasManager : MonoBehaviour
     bool enMenu;
     bool enPausa;
     bool enCredits;
+    public AudioSource playMusic;
+    public AudioSource MenuMusic;
+    public AudioSource soundSelected; 
 
 
     // Start is called before the first frame update
@@ -39,6 +42,8 @@ public class canvasManager : MonoBehaviour
         //redplayer.ComensaPrincipi();
         //blueplayer.ComensaPrincipi();
         cameraMenu.enabled = true;
+        MenuMusic.Play();
+        playMusic.Stop();
         //volumeManager.clearBlur();
     }
 
@@ -51,17 +56,23 @@ public class canvasManager : MonoBehaviour
             {
                 if (!enPausa)
                 {
+                    soundSelected.Play();
+                    playMusic.Pause();
                     enPausa = true;
                     Time.timeScale = 0;
                     volumeManager.setBlur();
-                    Pause.enabled = true; 
+                    Pause.enabled = true;
+                    soundSelected.Play(); 
                 }
                 else
                 {
+                    soundSelected.Play(); 
+                    playMusic.UnPause(); 
                     enPausa = false;
                     Time.timeScale = 1;
                     volumeManager.clearBlur();
-                    Pause.enabled = false; 
+                    Pause.enabled = false;
+                    soundSelected.Play(); 
                 }
             }
         }
@@ -86,8 +97,6 @@ public class canvasManager : MonoBehaviour
                 BlackRedCanvasGroup.alpha = 3.0f - ((currentTemps - (duration / 2.0f)) / (duration / 2.0f)) * 3f;
                 yield return null;
             }
-
-            Debug.Log(BlackRedCanvasGroup.alpha);
 
             if (currentTemps > duration)
             {
@@ -117,8 +126,6 @@ public class canvasManager : MonoBehaviour
                 BlackBlueCanvasGroup.alpha = 3.0f - ((currentTemps - (duration / 2.0f)) / (duration / 2.0f)) * 3f;
                 yield return null;
             }
-
-            Debug.Log(BlackBlueCanvasGroup.alpha);
 
             if (currentTemps > duration)
             {
@@ -162,14 +169,17 @@ public class canvasManager : MonoBehaviour
 
     public void continuePausa()
     {
+        playMusic.UnPause();
         enPausa = false;
         Time.timeScale = 1;
         volumeManager.clearBlur();
         Pause.enabled = false;
+        soundSelected.Play(); 
     }
 
     public void MenuPausa()
-    {
+    {   playMusic.Stop();
+        MenuMusic.UnPause(); 
         Time.timeScale = 1;
         enPausa = false;
         volumeManager.clearBlur();
@@ -178,17 +188,21 @@ public class canvasManager : MonoBehaviour
         Pause.enabled = false;
         Menu.enabled = true;
         cameraMenu.enabled = true;
+        soundSelected.Play(); 
 
     }
 
     public void PlayMenu()
     {
+        playMusic.Play(); 
+        MenuMusic.Pause();
         volumeManager.clearBlur();
         enMenu = false;
         Menu.enabled = false; 
         cameraMenu.enabled = false;
         redplayer.ComensaPrincipi();
         blueplayer.ComensaPrincipi();
+        soundSelected.Play();
     }
 
     public void ExitMenu()
@@ -204,7 +218,8 @@ public class canvasManager : MonoBehaviour
         Menu.enabled = false;
         cameraMenu.enabled = false;
         Credits.enabled = true;
-        CreditsCamera.enabled = true; 
+        CreditsCamera.enabled = true;
+        soundSelected.Play(); 
     }
 
     public void ExitCredits()
@@ -215,7 +230,8 @@ public class canvasManager : MonoBehaviour
         Menu.enabled=true;
         cameraMenu.enabled = true;
         Credits.enabled = false;
-        CreditsCamera.enabled = false; 
+        CreditsCamera.enabled = false;
+        soundSelected.Play(); 
     }    
 
 }

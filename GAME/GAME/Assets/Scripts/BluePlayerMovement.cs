@@ -11,7 +11,10 @@ public class BluePlayerMovement : MonoBehaviour
     private Rigidbody myRigidbody;
     public float FallingThreshold = -10f;
     private int currentNivell;
+    public AudioSource Winsound;
     private Transform myTransform;
+    public AudioSource deathSound;
+    public AudioSource runningsound;
 
     public GlobalVolumeManager volumeManager;
     public canvasManager canvasManager;
@@ -86,96 +89,112 @@ public class BluePlayerMovement : MonoBehaviour
         {
             myRigidbody.AddForce(new Vector3(-1f, 1f, -1f) * forceGrupPunxes1);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "punxes8")
         {
             myRigidbody.AddForce(new Vector3(0f, 1f, 1f) * forceGrupPunxes2);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "punxes11")
         {
             myRigidbody.AddForce(new Vector3(-1f, 1f, 0f) * forceGrupPunxes3);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "cGran1")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceGirador1);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "cGran2")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceGirador2);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "Torus1" || collision.gameObject.name == "Torus2")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceTorusNivell1);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "d2" || collision.gameObject.name == "d1" || collision.gameObject.name == "d3")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forced);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "f11" || collision.gameObject.name == "f22" || collision.gameObject.name == "f33" || collision.gameObject.name == "f44" || collision.gameObject.name == "f55" || collision.gameObject.name == "f66" || collision.gameObject.name == "f77")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forcePendulum);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "pal2aspa1" || collision.gameObject.name == "pal1aspa1" || collision.gameObject.name == "pal1aspa2" || collision.gameObject.name == "pal2aspa2")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceAspa);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "porta11" || collision.gameObject.name == "porta12" || collision.gameObject.name == "porta21" || collision.gameObject.name == "porta22" || collision.gameObject.name == "porta31" || collision.gameObject.name == "porta32" || collision.gameObject.name == "porta41" || collision.gameObject.name == "porta42")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forcePorta);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "Roda1Objecte1" || collision.gameObject.name == "Roda1Objecte2" || collision.gameObject.name == "Roda1Objecte3" || collision.gameObject.name == "Roda1Objecte4" || collision.gameObject.name == "Roda2Objecte1" || collision.gameObject.name == "Roda2Objecte2" || collision.gameObject.name == "Roda2Objecte3" || collision.gameObject.name == "Roda2Objecte4")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceRoda);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "d8")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forced);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "cGran3")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceGirador1);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "picMartell1" || collision.gameObject.name == "picMartell2" || collision.gameObject.name == "picMartell3" || collision.gameObject.name == "picMartell4" || collision.gameObject.name == "picMartell5" || collision.gameObject.name == "picMartell6" || collision.gameObject.name == "picMartell7" || collision.gameObject.name == "picMartell8")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceMartell);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "pal2aspa3" || collision.gameObject.name == "pal1aspa3" || collision.gameObject.name == "pal2aspa4" || collision.gameObject.name == "pal1aspa4")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceAspa);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "Torus3")
         {
             myRigidbody.AddForce(collision.contacts[0].normal * forceTorusNivell1);
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
         else if (collision.gameObject.name == "picoBoxa1" || collision.gameObject.name == "picoBoxa2" || collision.gameObject.name == "picoBoxa3" || collision.gameObject.name == "picoBoxa4")
@@ -183,6 +202,7 @@ public class BluePlayerMovement : MonoBehaviour
             myRigidbody.AddForce(collision.contacts[0].normal * forceBoxe);
             myRigidbody.useGravity = true;
             colisionat = true;
+            deathSound.Play();
             animator.SetBool("isMoving", false);
         }
 
@@ -197,6 +217,7 @@ public class BluePlayerMovement : MonoBehaviour
         {
             if ((Input.GetKey(KeyCode.Alpha1)) && (currentNivell != 1))
             {
+                runningsound.Pause();
                 canviantNivell = true;
                 animator.SetBool("isMoving", false);
                 animator.SetBool("isFalling", false);
@@ -204,6 +225,7 @@ public class BluePlayerMovement : MonoBehaviour
             }
             else if ((Input.GetKey(KeyCode.Alpha2)) && (currentNivell != 2))
             {
+                runningsound.Pause();
                 canviantNivell = true;
                 animator.SetBool("isMoving", false);
                 animator.SetBool("isFalling", false);
@@ -211,6 +233,7 @@ public class BluePlayerMovement : MonoBehaviour
             }
             else if ((Input.GetKey(KeyCode.Alpha3)) && (currentNivell != 3))
             {
+                runningsound.Pause();
                 canviantNivell = true;
                 animator.SetBool("isMoving", false);
                 animator.SetBool("isFalling", false);
@@ -218,6 +241,7 @@ public class BluePlayerMovement : MonoBehaviour
             }
             else if ((Input.GetKey(KeyCode.Alpha4)) && (currentNivell != 4))
             {
+                runningsound.Pause();
                 canviantNivell = true;
                 animator.SetBool("isMoving", false);
                 animator.SetBool("isFalling", false);
@@ -225,6 +249,7 @@ public class BluePlayerMovement : MonoBehaviour
             }
             else if ((Input.GetKey(KeyCode.Alpha5)) && (currentNivell != 5))
             {
+                runningsound.Pause();
                 canviantNivell = true;
                 animator.SetBool("isMoving", false);
                 animator.SetBool("isFalling", false);
@@ -234,6 +259,7 @@ public class BluePlayerMovement : MonoBehaviour
             {
                 if (myRigidbody.velocity.y < FallingThreshold)
                 {
+                    runningsound.Pause();
                     Falling = true;
                     animator.SetBool("isMoving", false);
                 }
@@ -246,6 +272,10 @@ public class BluePlayerMovement : MonoBehaviour
                 {
                     if (Input.GetKey(KeyCode.UpArrow))
                     {
+                        if (!runningsound.isPlaying)
+                        {
+                            runningsound.Play();
+                        }
                         if (currentNivell == 1)
                         {
                             MouNivell1();
@@ -269,6 +299,7 @@ public class BluePlayerMovement : MonoBehaviour
                     }
                     else
                     {
+                        runningsound.Pause();
                         animator.SetBool("isMoving", false);
                     }
                 }
@@ -463,6 +494,8 @@ public class BluePlayerMovement : MonoBehaviour
     
     private IEnumerator guanyat()
     {
+        Winsound.Play();
+
         StartCoroutine(RedPlayer.perdut()); 
         guanyatBlue = true;
         canviantNivell = true;
