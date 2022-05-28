@@ -508,6 +508,7 @@ public class BluePlayerMovement : MonoBehaviour
         else
         {
             //Credits
+            canvasManager.guanyaCredits(); 
             yield return null; 
         }
 
@@ -527,7 +528,7 @@ public class BluePlayerMovement : MonoBehaviour
         }
         else
         {
-            //Credits
+            //nothing
             yield return null; 
         }
 

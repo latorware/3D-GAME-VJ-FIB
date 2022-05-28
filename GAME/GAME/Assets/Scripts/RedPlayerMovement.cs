@@ -513,8 +513,8 @@ public class RedPlayerMovement : MonoBehaviour
             StartCoroutine(canviaNivell(currentNivell+1));
         }
         else
-        { 
-            //Credits
+        {
+            canvasManager.guanyaCredits(); 
         }
 
 
@@ -533,7 +533,8 @@ public class RedPlayerMovement : MonoBehaviour
         }
         else
         {
-            //Credits
+            //nothing
+            yield return null; 
         }
 
 

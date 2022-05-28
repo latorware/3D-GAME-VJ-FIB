@@ -232,6 +232,21 @@ public class canvasManager : MonoBehaviour
         Credits.enabled = false;
         CreditsCamera.enabled = false;
         soundSelected.Play(); 
-    }    
+    }
+
+
+    public void guanyaCredits()
+    {
+        volumeManager.setBlur();
+        enMenu = false;
+        enCredits = true;
+        Menu.enabled = false;
+        cameraMenu.enabled = false;
+        Credits.enabled = true;
+        CreditsCamera.enabled = true;
+        soundSelected.Play();
+        playMusic.Stop();
+        MenuMusic.Play(); 
+    }
 
 }
