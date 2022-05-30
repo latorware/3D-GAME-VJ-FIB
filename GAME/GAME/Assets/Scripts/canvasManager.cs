@@ -18,6 +18,7 @@ public class canvasManager : MonoBehaviour
     public Canvas Pause;
     public Canvas Credits;
     public Canvas Menu;
+    public Canvas Instructions; 
     public RedPlayerMovement redplayer;
     public BluePlayerMovement blueplayer; 
     bool enMenu;
@@ -35,7 +36,7 @@ public class canvasManager : MonoBehaviour
         CreditsCamera.enabled = false;
         enPausa = false;
         enCredits = false;
-        LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f; BlackBlueCanvasGroup.alpha = 0f; BlackRedCanvasGroup.alpha = 0f; Pause.enabled = false; Credits.enabled = false; 
+        LevelText1.alpha = 0f; LevelText2.alpha = 0f; LevelText3.alpha = 0f; LevelText4.alpha = 0f; LevelText5.alpha = 0f; BlackBlueCanvasGroup.alpha = 0f; BlackRedCanvasGroup.alpha = 0f; Pause.enabled = false; Credits.enabled = false; Instructions.enabled = false;
         Menu.enabled = true;
         Time.timeScale = 1;
         volumeManager.clearBlur();
@@ -248,5 +249,30 @@ public class canvasManager : MonoBehaviour
         playMusic.Stop();
         MenuMusic.Play(); 
     }
+
+    public void ExitHowtoplay()
+    {
+        volumeManager.clearBlur();
+        enMenu = true;
+        enCredits = false;
+        Menu.enabled = true;
+        cameraMenu.enabled = true;
+        Instructions.enabled = false;
+        CreditsCamera.enabled = false;
+        soundSelected.Play();
+    }
+
+    public void howtoplayyMenu()
+    {
+        volumeManager.setBlur();
+        enMenu = false;
+        enCredits = true;
+        Menu.enabled = false;
+        cameraMenu.enabled = false;
+        Instructions.enabled = true;
+        CreditsCamera.enabled = true;
+        soundSelected.Play();
+    }
+
 
 }
